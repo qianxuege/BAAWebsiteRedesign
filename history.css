@@ -1,5 +1,6 @@
+/* nav bar css*/
 .header-top {
-    background-color: #8B0000; /* Adjust color to match your header */
+    background-color: #8B0000; 
     color: white;
     padding: 10px 0;
     margin-top: 0;
@@ -7,14 +8,13 @@
   .navbar {
     padding: 0;
     margin-top: 0; 
-
+    
   }
   .navbar-brand {
-    font-size: 1.5em; /* Adjust size as needed */
-    color: white;
+    font-size: 1.5em;
   }
   .navbar-nav .nav-link {
-    color: black; /* Adjust color to match your design */
+    color: black; 
   }
   .navbar-dark .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.1);
@@ -29,17 +29,24 @@
     margin-top: 0;
     padding: 0;
     }
-.nav-fill{
+  .nav-fill{
     background-color: lightgray;
     border-radius: 5px;
-}
-.breadcrumb-container {
-    padding-left: 15px; /* Align with the navbar's content */
-    padding-top: 5px; /* Space between the navbar and the breadcrumb */
   }
-
-  .breadcrumb {
-    color: black; /* Or any color that fits the design */
-    font-size: 0.9em; /* Adjust the size as needed */
+  .breadcrumb-container {
+    padding-left: 0px; 
+    padding-top: 0px; 
+    margin: 0;
+    float: right;
+    position: relative;
+    top: -6vmin;
+    left: -5vmin;
+  }
+  .navgoingto {
+    color: black;
+    font-size: 12px;
+  }
+  .homelink{
+    color:black;
   }
   
