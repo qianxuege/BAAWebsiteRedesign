@@ -1,0 +1,40 @@
+.background_image{
+    position: relative;
+    z-index: 0;
+}
+
+.youtube{
+    display: block;
+    margin: auto;
+    text-align: center;
+    z-index: 15;
+}
+
+      
+.top_container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.middle_container{
+    max-width: 90%;
+    margin: auto;
+}
+
+.whatIsBuggy{
+    max-width: 49.7685%;
+    float: left;
+}
+
+.whenIsIt{
+    max-width: 42.7083%;
+    float: right;
+}
+
+
+.card{
+    clear: both;
+    min-width: 30.092593%;
+    margin: 10px 1.96% 10px 0px;
+}
+
