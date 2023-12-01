@@ -3,6 +3,21 @@
 	margin: 0;
 }
 
+a {
+	color: gray;
+}
+
+.dividerContainer {
+	width: 90%;
+	height: 0.8vmin;
+	margin: 1vmin auto;
+	background-color: #8b0000;
+}
+
+.inline-block {
+	display: inline-flex;
+}
+
 /* nav bar css*/
 .header-top {
 	background-color: #8b0000;
@@ -55,7 +70,157 @@
 }
 
 /* carousel */
+.carouselText {
+	z-index: 3;
+	position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	top: 20%;
+}
+
+.carouselHeading {
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+
+.carouselBottomBtns {
+	position: absolute;
+	width: 100%;
+	top: 40vmin;
+}
+
+.carouselBottomBtns .carouselBtn {
+	width: 100%;
+	text-align: center;
+}
+
+.carouselBottomBtns .btn {
+	background-color: #b6cbe5;
+	color: white;
+}
+
 #racedayCarousel {
-    overflow:hidden;
-    height: 80vmin;
+	overflow: hidden;
+	height: 80vmin;
+}
+
+/* Leaderboard */
+
+.nav-tabs {
+	border-bottom: 1px solid #8b0000;
+	color: black;
+}
+
+.nav-link {
+	color: black;
+}
+
+.nav-item .active {
+	border: 1px solid #8b0000;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	/* border: 1px solid gray; */
+}
+
+tr {
+	border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+th {
+	background-color: #878787;
+	color: white;
+}
+
+td,
+th {
+	padding: 2vmin;
+}
+
+.leaderboardNSchedule {
+	margin-top: 2vmin;
+	margin-bottom: 3vmin;
+	margin-left: 3vmin;
+}
+
+.leaderboardNSchedule a {
+	font-family: "Raleway", sans-serif;
+}
+
+.leaderboardHeading {
+	position: relative;
+}
+
+.leaderboardHeading .additionalLink {
+	position: relative;
+	top: 1.8vmin;
+}
+
+.leaderboardTabs {
+	margin-top: 1vmin;
+}
+
+/* schedule at a glance */
+
+.horizontalCards {
+	margin-top: 1vmin;
+}
+
+.horizontalCards .cardImg img {
+	width: 15vmin; /* Increased width of the image */
+	height: 20vmin; /* Increased height of the image */
+	object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.horizontalCards .customCardBody p {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.horizontalCards .scheduleTitle {
+	font-family: "Inter", sans-serif;
+	font-size: 1.4rem;
+	color: #ab0606;
+}
+
+.horizontalCards .scheduleLocation {
+	font-family: "Inter", sans-serif;
+	font-size: 0.8rem;
+}
+
+.horizontalCards .scheduleDescription {
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
+}
+
+/* raceday resources */
+.cardCenterHeading {
+    text-align: center;
+}
+
+.racedayResources {
+	margin-top: 2vmin;
+	margin-bottom: 3vmin;
+	margin-left: 3vmin;
+}
+
+.racedayResources .card {
+    width: 100%; /* the width would be the same as the col width*/
+}
+
+.iconImgContainer {
+	height: 25vmin;
+	background-color: #f2f5ef;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconImg {
+	/* position: absolute; */
+	/* margin: auto; */
+	width: 20vmin;
 }

@@ -22,6 +22,13 @@
 		/>
 		<!-- custom css -->
 		<link rel="stylesheet" type="text/css" href="./homepage.css" />
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow&family=Bowlby+One&family=Dancing+Script&family=Gabarito&family=Inter:wght@300&family=Montserrat:wght@300&family=Playfair+Display:ital,wght@0,500;1,400&family=Raleway:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="header-top">
@@ -102,11 +109,12 @@
 				</div>
 			</div>
 		</nav>
+		<!-- carousel -->
 		<div
 			id="racedayCarousel"
 			class="carousel slide"
 			data-bs-ride="carousel"
-            data-bs-interval="100000"
+			data-bs-interval="100000"
 		>
 			<div class="carousel-indicators">
 				<button
@@ -132,13 +140,25 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item">
-					<img src="./images/buggy21.jpg" class="d-block w-100" alt="raceday 2021" />
+					<img
+						src="./images/buggy21.jpg"
+						class="d-block w-100"
+						alt="raceday 2021"
+					/>
 				</div>
-                <div class="carousel-item active">
-					<img src="./images/raceDayFringeA.jpg" class="d-block w-100" alt="fringe A" />
+				<div class="carousel-item active">
+					<img
+						src="./images/raceDayFringeA.jpg"
+						class="d-block w-100"
+						alt="fringe A"
+					/>
 				</div>
 				<div class="carousel-item">
-					<img src="./images/raceDayScreen.jpeg" class="d-block w-100" alt="raceday" />
+					<img
+						src="./images/raceDayScreen.jpeg"
+						class="d-block w-100"
+						alt="raceday"
+					/>
 				</div>
 			</div>
 			<button
@@ -159,7 +179,224 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
+			<div class="carouselText">
+				<div class="carouselHeading row">
+					<h1>Raceday</h1>
+				</div>
+				<div class="carouselBottomBtns row gx-3">
+					<div class="col carouselBtn">
+						<button class="btn" type="submit">Course Info</button>
+					</div>
+					<div class="col carouselBtn">
+						<button class="btn" type="submit">Leaderboard</button>
+					</div>
+					<div class="col carouselBtn">
+						<button class="btn" type="submit">Livestream</button>
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- Leaderboard -->
+		<!-- referenced this page: https://cmubuggy.org/history/raceday/2023 -->
+		<div class="container-fluid row gx-5 leaderboardNSchedule">
+			<div class="col-8">
+				<div class="row leaderboardHeading">
+					<h2 class="col-3">Leaderboard</h2>
+					<a class="col additionalLink">see full version</a>
+				</div>
+				<div class="leaderboardTabs">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Men</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Women</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">All Gender</a>
+						</li>
+					</ul>
+				</div>
+				<div class="leaderboardContainer">
+					<table>
+						<tr>
+							<th>Place</th>
+							<th>Team</th>
+							<th>Buggy</th>
+							<th>Prelims</th>
+							<th>Finals</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>PiKA A</td>
+							<td>Banshee</td>
+							<td>2:09.26</td>
+							<td>2:09.39</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Spirit A</td>
+							<td>Seraph</td>
+							<td>2:12.65</td>
+							<td>2:11.49</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Apex A</td>
+							<td>Firefly</td>
+							<td>2:15.00</td>
+							<td>pending</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Spirit B</td>
+							<td>Mapambazuko</td>
+							<td>2:17.65</td>
+							<td>pending</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Fringe B</td>
+							<td>Eileen</td>
+							<td>2:20.77</td>
+							<td>pending</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>CIA C</td>
+							<td>Emperor</td>
+							<td>2:20.03</td>
+							<td>pending</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>CIA B</td>
+							<td>Roadrunner</td>
+							<td>2:18.55</td>
+							<td>pending</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>SigNu A</td>
+							<td>Jaeger</td>
+							<td>2:18.20</td>
+							<td>pending</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- schedule at a glance -->
+			<div class="col schedule">
+				<div class="row">
+					<h2 class="col-12">Schedule at a Glance</h2>
+					<a class="col-12">see Spring Carnival Schedule</a>
+					<a class="col-12">see full Buggy schedule</a>
+				</div>
+				<div class="schedule">
+					<h3>Thursday, April 13</h3>
+					<div class="horizontalCards row">
+						<div class="col-3 cardImg">
+							<img src="./images/buggyDesigns.jpeg" alt="buggy designs" />
+						</div>
+						<div class="customCardBody col">
+							<p class="scheduleTitle">Buggy Showcase</p>
+							<p class="scheduleLocation">Weigand Gym (CUC 1st Floor) @ Noon</p>
+							<p class="scheduleDescription">
+								View the latest buggy designs, talk with the teams, enjoy
+								kid-friendly buggy activities, and vote for the Buggy People’s
+								Choice Award.
+							</p>
+						</div>
+					</div>
+					<div class="horizontalCards row">
+						<div class="col-3 cardImg">
+							<img
+								src="./images/randomFoodPexels.jpg"
+								alt="food image taken from Pexels.com"
+							/>
+						</div>
+						<div class="customCardBody col">
+							<p class="scheduleTitle">Buggy Kickoff Dinner</p>
+							<p class="scheduleLocation">Fuel & Fuddle @ 8am</p>
+							<p class="scheduleDescription">
+								Come join the Buggy Alumni Association for our annual kickoff
+								dinner! Connect and catch up with your fellow buggy alumni...
+							</p>
+						</div>
+					</div>
+					<div class="horizontalCards row">
+						<div class="col-3 cardImg">
+							<img
+								src="./images/auction.jpg"
+								alt="food image taken from Pexels.com"
+							/>
+						</div>
+						<div class="customCardBody col">
+							<p class="scheduleTitle">Prelim Lead Truck Auction</p>
+							<p class="scheduleLocation">Online @ Until 11pm ET</p>
+							<p class="scheduleDescription">
+								Bid online on your favorite prelim heats for your chance at the
+								best buggy viewing experience!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- divider -->
+		<div class="dividerContainer">
+			<div class="divider"></div>
+		</div>
+		<!-- raceday resources -->
+		<div class="container-fluid row gx-5 racedayResources">
+			<h2>Raceday Resources</h2>
+			<div class="row gx-5">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="iconImgContainer card-img-top">
+                            <img class="iconImg" src="./images/calendarIcon.png"  alt="calendar icon from FreeIconsPNG" />
+                            <!-- https://www.freeiconspng.com/images/calendar-icon-png -->
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text cardCenterHeading">
+                                <b>Heat Schedule</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="iconImgContainer card-img-top">
+                            <img class="iconImg" src="./images/rosterIcon.png"  alt="roster icon" />
+                            <!-- https://thenounproject.com/browse/icons/term/roster/ -->
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text cardCenterHeading">
+                                <b>Rosters</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="iconImgContainer card-img-top">
+                            <img class="iconImg" src="./images/photoIcon.png"  alt="photo icon" />
+                            <!-- https://www.shareicon.net/images-image-photo-picture-gallery-pictures-880210#google_vignette -->
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text cardCenterHeading">
+                                <b>Raceday Photos</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+        <!-- divider -->
+        <div class="dividerContainer">
+			<div class="divider"></div>
+		</div>
+
 		<!-- Bootstrap Popper and JS link -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
