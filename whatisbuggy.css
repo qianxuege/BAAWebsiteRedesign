@@ -5,35 +5,40 @@
     padding: 10px 0;
     margin-top: 0;
   }
-  .navbar {
+.navbar {
     padding: 0;
     margin-top: 0; 
-    
-  }
-  .navbar-brand {
-    font-size: 1.5em;
-  }
-  .navbar-nav .nav-link {
-    color: black; 
-  }
-  .navbar-dark .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
-  }
+}
 
-  .race-info {
+.navbar-brand {
+    font-size: 1.5em;   
+}
+
+.navbar-nav .nav-link {
+    color: black; 
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.race-info {
     text-align: right;
-  }
-  .navbar-collapse {
+}
+
+.navbar-collapse {
     border-bottom: 2px solid;
     border-color: #8B0000;
     margin-top: 0;
     padding: 0;
-    }
-  .nav-fill{
+}
+
+.nav-fill{
     background-color: lightgray;
     border-radius: 5px;
-  }
-  .breadcrumb-container {
+}
+
+.breadcrumb-container {
     padding-left: 0px; 
     padding-top: 0px; 
     margin: 0;
@@ -41,18 +46,24 @@
     position: relative;
     top: -6vmin;
     left: -5vmin;
-  }
-  .navgoingto {
+}
+.navgoingto {
     color: black;
     font-size: 12px;
-  }
-  .homelink{
+}
+
+.homelink{
     color:black;
-  }
-  
-  .size26{
+}
+
+.size26{
     font-size: 216.66667%;
-    margin: 2% 0px 1% 0px;
+    margin: 1% 0px 1% 0px;
+}
+
+.top_intro{
+    font-size: 216.66667%;
+    margin: 1% 0px -1% 0px;
 }
 
 
@@ -97,8 +108,8 @@
   
 /* second 1/3 section "Begin Your Buggy Journey" css */
 .card{
-    min-width: 30.092593%;
-    margin: 10px 1.96% 10px 0px;
+    width: 80%;
+    margin: auto;
     height: 100%;
 }
 
@@ -111,11 +122,6 @@
 
 
 /* Last 1/3 section "Helpful Resources" css */
-.card{
-    min-width: 30.092593%;
-    margin: 10px 1.96% 10px 0px;
-    height: 100%;
-}
 
 .card-img-top{
     height: 70%;
