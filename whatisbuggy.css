@@ -50,21 +50,18 @@
     color:black;
   }
   
+  .size26{
+    font-size: 216.66667%;
+    margin: 0px 0px 0px 0px;
+}
 
 
+/* carousel css */
 .background_image{
     position: relative;
     width: 100%;
     z-index: 0;
 }
-
-.youtube{
-    display: block;
-    margin: auto;
-    text-align: center;
-    z-index: 15;
-}
-
       
 .top_container {
     max-width: 90%;
@@ -76,6 +73,8 @@
     margin: auto;
 }
 
+
+/* First 1/3 section css */
 .whatIsBuggy{
     max-width: 49.7685%;
     float: left;
@@ -84,9 +83,21 @@
 .whenIsIt{
     max-width: 42.7083%;
     float: right;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding: 10px 20px 20px 20px;
+}
+
+.readmore{
+    background-color:#8B0000;
+    border-bottom: 3px solid;
+    border-color: #8B0000;
+    border-radius: 5px;
+    color:white;
 }
 
 
+/* second 1/3 section css */
 .card{
     clear: both;
     min-width: 30.092593%;
@@ -97,7 +108,3 @@
     clear: both;
 }
 
-#topwhatisbuggy{
-    font-size: 200%;
-    margin: 0px 0px -5px 0px;
-}
