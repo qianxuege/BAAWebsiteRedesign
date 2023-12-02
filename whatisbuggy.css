@@ -86,17 +86,20 @@
 }
 
 .whatIsBuggy{
-    max-width: 49.7685%;
+    max-width: 50%;
     float: left;
 }
 
 .whenIsIt{
-    max-width: 42.7083%;
+    max-width: 45%;
     float: right;
     background-color: #d9d9d9;
     border-radius: 5px;
     padding: 10px 20px 20px 20px;
+    margin: 6% 0 0 0;
 }
+
+
 
 #readmore{
     background-color:#8B0000;
@@ -143,10 +146,30 @@
 
 /* others */
 .separation{
-    width: 80%;
+    width: 100%;
     margin: auto;
     size: 3;
     background-color: #8B0000;
-    
 }
 
+
+
+@media screen and (max-width: 768px){
+    .whatIsBuggy{
+        min-width: 100%;
+        margin: auto;
+     
+    }
+
+    .whenIsIt{
+        clear: both;
+        margin: 5% 0px 5% 0px;
+        min-width: 100%;
+    }
+
+
+    #card_separation{
+        margin: 2% 0px 2% 0px;
+    }
+
+}
