@@ -148,7 +148,7 @@
 }
 
 .navbar-brand {
-  height: 100px; /* Adjust the height of the logo container */
+  height: 150px; /* Adjust the height of the logo container */
   display: flex;
   align-items: center; /* Centers the logo vertically */
 }
