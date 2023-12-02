@@ -71,6 +71,21 @@
     margin: 0% 0% -2% 0%;
 }
 
+.navbar {
+    padding: 0.5rem 1rem; /* Reduces padding inside the navbar */
+}
+
+.navbar-brand {
+    height: 150px; /* Adjust the height of the logo container */
+    display: flex;
+    align-items: center; /* Centers the logo vertically */
+}
+
+.navbar-brand img {
+    height: 100%; /* Makes the logo fill the height of its container */
+    width: auto; /* Keeps the logo aspect ratio */
+}
+  
 
 /* carousel css */
 .background_image{
