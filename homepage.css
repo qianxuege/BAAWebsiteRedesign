@@ -85,10 +85,45 @@ a {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* Smaller Navbar and Logo */
+.navbar {
+	padding: 0.5rem 1rem; /* Reduces padding inside the navbar */
+}
+
+.navbar-brand {
+	height: 150px; /* Adjust the height of the logo container */
+	display: flex;
+	align-items: center; /* Centers the logo vertically */
+}
+
+.navbar-brand img {
+	height: 100%; /* Makes the logo fill the height of its container */
+	width: auto; /* Keeps the logo aspect ratio */
+}
+
+.listtitle {
+	border-bottom: 1px solid #a30707; /* Light gray border for list items */
+}
+
+.linkColor {
+	color: gray;
+}
+.linkColor:hover {
+	background-color: #e9ecef; /* Light gray background on hover */
+	color: black;
+	text-decoration: none; /* Ensure no underline on hover */
+}
+
+.list-group-item:hover {
+	background-color: #e9ecef; /* Light gray background on hover */
+	color: black;
+	text-decoration: none; /* Ensure no underline on hover */
+}
 
 /* carousel */
 .carouselText {
@@ -256,10 +291,10 @@ th {
 
 @media screen and (min-width: 576px) {
 	.carouselBottomBtns {
-        top: 24vmin;
-    }
-    
-    .racedayResources .card-body {
+		top: 24vmin;
+	}
+
+	.racedayResources .card-body {
 		height: 10vmin;
 	}
 
@@ -271,16 +306,14 @@ th {
 	.schedule {
 		margin-top: 2vmin;
 	}
-
-    
 }
 
 @media screen and (min-width: 768px) {
 	.carouselBottomBtns {
-        top: 28vmin; /*40vmin*/
-    }
-    
-    .racedayResources .card-body {
+		top: 28vmin; /*40vmin*/
+	}
+
+	.racedayResources .card-body {
 		height: 7vmin;
 	}
 
@@ -296,10 +329,10 @@ th {
 
 @media screen and (min-width: 992px) {
 	.carouselBottomBtns {
-        top: 32vmin; /*40vmin*/
-    }
-    
-    .horizontalCards .cardImg img {
+		top: 32vmin; /*40vmin*/
+	}
+
+	.horizontalCards .cardImg img {
 		width: 20vmin; /* Increased width of the image */
 		height: 28vmin;
 	}
@@ -323,10 +356,10 @@ th {
 
 @media screen and (min-width: 1200px) {
 	.carouselBottomBtns {
-        top: 43vmin; 
-    }
-    
-    .horizontalCards .cardImg img {
+		top: 43vmin;
+	}
+
+	.horizontalCards .cardImg img {
 		width: 28vmin; /* Increased width of the image */
 		height: 20vmin;
 	}
