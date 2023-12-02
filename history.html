@@ -9,30 +9,28 @@
 
 </head>
 <div class="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <span>CMU BUGGY ALUMNI ASSOCIATION</span>
-        </div>
-        <div class="col-md-6 race-info">
-          <span>Race Day in 2024: Apr 12 - 13</span>
-        </div>
+  <div class="container-fluid"> <!-- Changed to container-fluid for full width -->
+    <div class="row">
+      <div class="col-12 col-md-6"> <!-- Responsive columns -->
+        <span>CMU BUGGY ALUMNI ASSOCIATION</span>
+      </div>
+      <div class="col-12 col-md-6 text-md-right race-info"> <!-- Text alignment changes on medium devices -->
+        <span>Race Day in 2024: Apr 12 - 13</span>
       </div>
     </div>
   </div>
+</div>
   
-  <nav class="navbar navbar-expand-lg">
-    <!-- logo section-->
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/Screenshot 2023-11-29 at 11.12.16 PM.png" alt="Logo" height=100>
-      </a>
-    <!-- navbar section -->  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid"> <!-- Changed to container-fluid -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/Screenshot 2023-11-29 at 11.12.16 PM.png" alt="Logo" height="100" class="img-fluid"> <!-- img-fluid for responsive image -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">News</a>
           </li>
@@ -62,9 +60,13 @@
 
   </nav>
   <!-- Home -> History section-->
-  <div class="container breadcrumb-container">
-    <span class="navgoingto"><a class="homelink" href="index.html">Home</a></span>
-    <span class="navgoingto">> History</span>
+  <div class="breadcrumb-container container-fluid"> <!-- Changed to container-fluid -->
+    <div class="row">
+      <div class="col-12">
+        <span class="navgoingto"><a class="homelink" href="index.html">Home</a></span>
+        <span class="navgoingto">> History</span>
+      </div>
+    </div>
   </div>
 
   <div class="header">
@@ -79,57 +81,88 @@
     </div>
   </div>
 
-  <div class="custom-container"> <!-- Custom container for 80% width -->
-    <div class="custom-section">
-      <img src="images/PastRace.jpg" alt="Buggy Race" class="img-fluid"> <!-- Replace with your image path -->
-      <div class="text-content">
-        <div class = "listtitle"><h2>Past Race Results</h2></div>
-        <div class="list-group">
-          <a href="#" class="list-group-item linkColor">Race Results for Every Year</a>
-          <a href="#" class="list-group-item linkColor">Every Buggy Organization, past or present</a>
-          <a href="#" class="list-group-item linkColor">Awards for the Design Competition</a>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The History of Buggy</title>
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="custom-container container-fluid">
+        <!-- First Custom Section -->
+        <div class="custom-section row align-items-center mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mb-md-0">
+                <img src="images/PastRace.jpg" alt="Buggy Race" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="text-content">
+                    <div class="listtitle"><h2>Past Race Results</h2></div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item linkColor">Race Results for Every Year</a>
+                        <a href="#" class="list-group-item linkColor">Every Buggy Organization, past or present</a>
+                        <a href="#" class="list-group-item linkColor">Awards for the Design Competition</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="custom-section">
-      <img src="images/buggy100.jpeg" alt="Buggy Race" class="img-fluid"> <!-- Replace with your image path -->
-      <div class="text-content">
-        <div class = "listtitle"><h2>Buggies and Buggy Organizations</h2></div>
-        <div class="list-group">
-          <a href="#" class="list-group-item linkColor">Every buggy We have Identified</a>
-          <a href="#" class="list-group-item linkColor">Every Buggy Organization, Past and Present</a>
-          <a href="#" class="list-group-item linkColor">Search people to see the races they were in</a>
-          <a href="#" class="list-group-item linkColor">The People Who Made Sweepstakes Happen</a>
+        <!-- Second Custom Section -->
+        <div class="custom-section row align-items-center mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mb-md-0">
+                <img src="images/buggy100.jpeg" alt="Buggy Race" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="text-content">
+                    <div class="listtitle"><h2>Buggies and Buggy Organizations</h2></div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item linkColor">Every buggy We have Identified</a>
+                        <a href="#" class="list-group-item linkColor">Every Buggy Organization, Past and Present</a>
+                        <a href="#" class="list-group-item linkColor">Search people to see the races they were in</a>
+                        <a href="#" class="list-group-item linkColor">The People Who Made Sweepstakes Happen</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="custom-section">
-      <img src="images/BuggyBook.jpg" alt="Buggy Race" class="img-fluid"> <!-- Replace with your image path -->
-      <div class="text-content">
-        <div class = "listtitle"><h2>Media</h2></div>
-        <div class="list-group">
-          <a href="#" class="list-group-item linkColor">Past Buggy Books</a>
-          <a href="#" class="list-group-item linkColor">Videos of previous Racedays</a>
-          <a href="#" class="list-group-item linkColor">Photos of previous Racedays</a>
-          <a href="#" class="list-group-item linkColor">Past Raceday Previews and Spotting Guides</a>
+        <!-- Third Custom Section -->
+        <div class="custom-section row align-items-center mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mb-md-0">
+                <img src="images/BuggyBook.jpg" alt="Buggy Race" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="text-content">
+                    <div class="listtitle"><h2>Media</h2></div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item linkColor">Past Buggy Books</a>
+                        <a href="#" class="list-group-item linkColor">Videos of previous Racedays</a>
+                        <a href="#" class="list-group-item linkColor">Photos of previous Racedays</a>
+                        <a href="#" class="list-group-item linkColor">Past Raceday Previews and Spotting Guides</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="custom-section">
-      <img src="images/Our100yearsBuggy.jpg" alt="Buggy Race" class="img-fluid"> <!-- Replace with your image path -->
-      <div class="text-content">
-        <div class = "listtitle"><h2>Our 100 Years of Buggy Blog Series</h2></div>
-        <div class="list-group">
-          <a href="#" class="list-group-item linkColor">Buggy Blogs</a>
+        <!-- Fourth Custom Section -->
+        <div class="custom-section row align-items-center mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mb-md-0">
+                <img src="images/Our100yearsBuggy.jpg" alt="Buggy Race" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="text-content">
+                    <div class="listtitle"><h2>Our 100 Years of Buggy Blog Series</h2></div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item linkColor">Buggy Blogs</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+    <!-- Bootstrap JS and jQuery dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></
 
-
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.3/dist/umd/popper.min.js"></script>

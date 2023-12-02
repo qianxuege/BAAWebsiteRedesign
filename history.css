@@ -1,145 +1,159 @@
 /* nav bar css*/
 .header-top {
-    background-color: #8B0000; 
-    color: white;
-    padding: 10px 0;
-    margin-top: 0;
-  }
-  .navbar {
-    padding: 0;
-    margin-top: 0; 
-    
-  }
-  .navbar-brand {
-    font-size: 1.5em;
-  }
-  .navbar-nav .nav-link {
-    color: black; 
-  }
-  .navbar-dark .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .race-info {
-    text-align: right;
-  }
-  .navbar-collapse {
-    border-bottom: 2px solid;
-    border-color: #8B0000;
-    margin-top: 0;
-    padding: 0;
-    }
-  .nav-fill{
-    background-color: lightgray;
-    border-radius: 5px;
-  }
-  .breadcrumb-container {
-    padding-left: 0px; 
-    padding-top: 0px; 
-    margin: 0;
-    float: right;
-    position: relative;
-    top: -6vmin;
-    left: -5vmin;
-  }
-  .navgoingto {
-    color: black;
-    font-size: 12px;
-  }
-  .homelink{
-    color:black;
-  }
-
-  .header {
-    color: black;
-    text-align: center;
-    padding: 0;
-    margin-top: 0;
-    position: relative;
-    top: -8vmin;
-  }
-  .record-section {
-    background-color: #aeacac; /* Adjust the color to match the exact shade you want */
-    color: white;
-    padding: 5px 0;
-    text-align: center;
-    position: relative;
-    top: -6vmin;
-  }
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  .historyheader{
-    font-size: 35px;
-  }
-
-  .custom-container {
-    max-width: 80%; /* Set the maximum width of the container to 80% of the viewport width */
-    margin: auto; /* Center the container */
-    padding: 40px 0; /* Spacing at the top and bottom of the container */
-  }
-
-  .custom-section {
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Increased spacing around the content */
-    display: flex; /* Flex layout to place items side by side */
-    align-items: center; /* Vertically center align items */
-    margin-bottom: 20px; /* Space below the section */
-    position: relative;
-    top: -10vmin;
-  }
+  background-color: #8B0000; 
+  color: white;
+  padding: 10px 0;
+  margin-top: 0;
+}
+.navbar {
+  padding: 0;
+  margin-top: 0; 
   
-  .custom-section img {
-    border-radius: 50%; /* Make image round */
-    width: 300px; /* Increased width of the image */
-    height: 300px; /* Increased height of the image */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-    margin-right: 30px; /* Increased spacing between image and text */
-  }
-  
-  .custom-section h2 {
-    font-size: 2rem; /* Increased size of the section title */
-    color: #333; /* Color of the title */
-    margin-bottom: 1rem; /* Increased space below the title */
-  }
-  
-  .custom-section .text-content {
-    flex-grow: 1; /* Allows the text content to fill the remaining space */
-  }
-  
-  .custom-section .list-group-item {
-    background: transparent; /* Transparent background */
-    border: none; /* No borders */
-    padding-left: 0; /* No padding on the left */
-    padding-right: 0; /* No padding on the right */
-  }
-  
-  .custom-section .list-group-item {
-    border-bottom: 1px solid lightgray; /* Light gray border for list items */
-  }
-  
-  .custom-section .list-group-item:hover {
-    background-color: #e9ecef; /* Light hover effect */
-  }
-
-  .listtitle{
-    border-bottom: 1px solid #a30707; /* Light gray border for list items */
-  }
-
-  .linkColor{
-    color: gray;
-  }
-  .linkColor:hover{
-    background-color: #e9ecef; /* Light gray background on hover */
-    color: black;
-    text-decoration: none; /* Ensure no underline on hover */
-  }
-
-  .list-group-item:hover {
-    background-color: #e9ecef; /* Light gray background on hover */
-    color: black;
-    text-decoration: none; /* Ensure no underline on hover */
+}
+.navbar-brand {
+  font-size: 1.5em;
+}
+.navbar-nav .nav-link {
+  color: black; 
+}
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
+.race-info {
+  text-align: right;
+}
+.navbar-collapse {
+  border-bottom: 2px solid;
+  border-color: #8B0000;
+  margin-top: 0;
+  padding: 0;
+  }
+.nav-fill{
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.breadcrumb-container {
+  padding-left: 0px; 
+  padding-top: 0px; 
+  margin: 0;
+  float: right;
+  position: relative;
+
+}
+.navgoingto {
+  color: black;
+  font-size: 12px;
+}
+.homelink{
+  color:black;
+}
+
+.header {
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+  position: relative;
+  top: -8vmin;
+}
+.record-section {
+  background-color: #aeacac; /* Adjust the color to match the exact shade you want */
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  position: relative;
+  top: -6vmin;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.historyheader{
+  font-size: 35px;
+}
+
+.custom-container {
+  max-width: 80%; /* Set the maximum width of the container to 80% of the viewport width */
+  margin: auto; /* Center the container */
+  padding: 40px 0; /* Spacing at the top and bottom of the container */
+}
+
+.custom-section {
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Increased spacing around the content */
+  display: flex; /* Flex layout to place items side by side */
+  align-items: center; /* Vertically center align items */
+  margin-bottom: 20px; /* Space below the section */
+  position: relative;
+  top: -10vmin;
+}
+
+.custom-section img {
+  border-radius: 50%; /* Make image round */
+  width: 300px; /* Increased width of the image */
+  height: 300px; /* Increased height of the image */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  margin-right: 30px; /* Increased spacing between image and text */
+}
+
+.custom-section h2 {
+  font-size: 2rem; /* Increased size of the section title */
+  color: #333; /* Color of the title */
+  margin-bottom: 1rem; /* Increased space below the title */
+}
+
+.custom-section .text-content {
+  flex-grow: 1; /* Allows the text content to fill the remaining space */
+}
+
+.custom-section .list-group-item {
+  background: transparent; /* Transparent background */
+  border: none; /* No borders */
+  padding-left: 0; /* No padding on the left */
+  padding-right: 0; /* No padding on the right */
+}
+
+.custom-section .list-group-item {
+  border-bottom: 1px solid lightgray; /* Light gray border for list items */
+}
+
+.custom-section .list-group-item:hover {
+  background-color: #e9ecef; /* Light hover effect */
+}
+
+.listtitle{
+  border-bottom: 1px solid #a30707; /* Light gray border for list items */
+}
+
+.linkColor{
+  color: gray;
+}
+.linkColor:hover{
+  background-color: #e9ecef; /* Light gray background on hover */
+  color: black;
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef; /* Light gray background on hover */
+  color: black;
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Smaller Navbar and Logo */
+.navbar {
+  padding: 0.5rem 1rem; /* Reduces padding inside the navbar */
+}
+
+.navbar-brand {
+  height: 100px; /* Adjust the height of the logo container */
+  display: flex;
+  align-items: center; /* Centers the logo vertically */
+}
+
+.navbar-brand img {
+  height: 100%; /* Makes the logo fill the height of its container */
+  width: auto; /* Keeps the logo aspect ratio */
+}
