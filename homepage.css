@@ -8,7 +8,7 @@ a {
 }
 
 .dividerContainer {
-	width: 90%;
+	width: 100%;
 	height: 0.8vmin;
 	margin: 1vmin auto;
 	background-color: #8b0000;
@@ -87,7 +87,7 @@ a {
 .carouselBottomBtns {
 	position: absolute;
 	width: 100%;
-	top: 40vmin;
+	top: 20vmin; /*40vmin*/
 }
 
 .carouselBottomBtns .carouselBtn {
@@ -102,7 +102,7 @@ a {
 
 #racedayCarousel {
 	overflow: hidden;
-	height: 80vmin;
+	height: 50vmin; /*80vmin*/
 }
 
 /* Leaderboard */
@@ -143,8 +143,9 @@ th {
 .leaderboardNSchedule {
 	margin-top: 2vmin;
 	margin-bottom: 3vmin;
-	margin-left: 3vmin;
+    margin-left: 0.6vmin;
 }
+
 
 .leaderboardNSchedule a {
 	font-family: "Raleway", sans-serif;
@@ -165,13 +166,17 @@ th {
 
 /* schedule at a glance */
 
+.schedule {
+    margin-top: 5vmin;
+}
+
 .horizontalCards {
 	margin-top: 1vmin;
 }
 
 .horizontalCards .cardImg img {
-	width: 15vmin; /* Increased width of the image */
-	height: 20vmin; /* Increased height of the image */
+	width: 20vmin; /* 15vmin*/
+	height: 25vmin; /* 20vmin */
 	object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
@@ -204,11 +209,16 @@ th {
 .racedayResources {
 	margin-top: 2vmin;
 	margin-bottom: 3vmin;
-	margin-left: 3vmin;
+	margin-left: 0.8vmin;
 }
+
 
 .racedayResources .card {
     width: 100%; /* the width would be the same as the col width*/
+}
+
+.racedayResources .card-body {
+    height: 17vmin;
 }
 
 .iconImgContainer {
@@ -223,4 +233,69 @@ th {
 	/* position: absolute; */
 	/* margin: auto; */
 	width: 20vmin;
+}
+
+@media screen and (min-width: 576px) {
+    .racedayResources .card-body {
+        height: 10vmin;
+    }
+    
+    .horizontalCards .cardImg img {
+        width: 20vmin; /* Increased width of the image */
+        height: 18vmin;
+    }
+
+    .schedule {
+        margin-top: 2vmin;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .racedayResources .card-body {
+        height: 7vmin;
+    }
+    
+    .horizontalCards .cardImg img {
+        width: 20vmin; /* Increased width of the image */
+        height: 14vmin;
+    }
+
+    .schedule {
+        margin-top: 1vmin;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .horizontalCards .cardImg img {
+        width: 20vmin; /* Increased width of the image */
+        height: 28vmin;
+    }
+
+    .leaderboardNSchedule{
+        margin-left: 3vmin;
+    }
+
+    .leaderboardNSchedule .dividerContainer {
+        display: none;
+    }
+
+    .schedule {
+        margin-top: 0;
+    }
+
+    #racedayCarousel {
+        height: 75vmin;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .horizontalCards .cardImg img {
+        width: 28vmin; /* Increased width of the image */
+        height: 20vmin;
+    }
+
+    #racedayCarousel {
+        height: 80vmin;
+    }
 }
