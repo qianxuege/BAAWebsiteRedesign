@@ -10,7 +10,7 @@ a {
 .dividerContainer {
 	width: 100%;
 	height: 0.8vmin;
-	margin: 1vmin auto;
+	margin: 5vmin auto;
 	background-color: #8b0000;
 }
 
@@ -354,6 +354,60 @@ th {
 	border-radius: 5vmin;
 	padding: 2vmin;
 	margin-bottom: 8vmin;
+}
+
+/* phone Recent News */
+.carouselNewsContainer {
+    margin-top: 3vmin;
+    margin-bottom: 2vmin;
+}
+
+.carouselNewsContainer .card-img-top {
+    height: 50vmin;
+    border-top-right-radius: 3vmin;
+    border-top-left-radius: 3vmin;
+}
+
+.carouselNewsContainer .card {
+    text-align: center;
+    margin:auto;
+}
+
+/* homepage basics */
+.homepageBasics .card-img-overlay { 
+    /*this is the text over the image*/
+    background-color:#4b4a4a4a;
+    height: 35vmin;
+}
+
+.homepageBasics .card-img-overlay .card-title {
+    position: relative;
+    top: 60%;
+}
+
+.homepageBasics .card-img-overlay p {
+    display: none;
+}
+
+.homepageBasics .overlayImg {
+    /* this is the image */
+    height: 35vmin;
+    width: 100%;
+    object-fit: cover;
+}
+
+.homepageBasics .overlayContainer {
+
+
+}
+
+#buggyImg {
+    /* height: 100vmin; */
+    
+}
+
+.homepageBasics .card-img-overlay p {
+    line-height: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
