@@ -33,28 +33,34 @@
 	<body>
 		<div class="header-top">
 			<div class="container-fluid">
-				<!-- Changed to container-fluid for full width -->
 				<div class="row">
 					<div class="col-12 col-md-6">
-						<!-- Responsive columns -->
 						<span>CMU BUGGY ALUMNI ASSOCIATION</span>
+						<div class="mobile-only">
+							<img
+								src="images/shield-in-circle.svg"
+								alt="Small Logo"
+								style="height: 30px"
+							/>
+							<span>BAA</span>
+						</div>
+						<!-- No separate span for 'BAA', we will use CSS to inject this content -->
 					</div>
 					<div class="col-12 col-md-6 text-md-right race-info">
-						<!-- Text alignment changes on medium devices -->
 						<span>Race Day in 2024: Apr 12 - 13</span>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
 				<!-- Changed to container-fluid -->
 				<a class="navbar-brand" href="index.html">
 					<img
-						src="./images/shield-in-circle.svg"
+						class="desk-top-view"
+						src="images/shield-in-circle.svg"
 						alt="Logo"
-						height="100"
 						class="img-fluid"
 					/>
 					<!-- img-fluid for responsive image -->
@@ -83,13 +89,11 @@
 								class="nav-link dropdown-toggle"
 								href="history.html"
 								id="navbarDropdownMenuLink"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
+								
 							>
 								History
 							</a>
-							<div
+							<!-- <div
 								class="dropdown-menu"
 								aria-labelledby="navbarDropdownMenuLink"
 							>
@@ -101,7 +105,7 @@
 								<a class="dropdown-item" href="#"
 									>Our 100 Years of Buggy Blog Series</a
 								>
-							</div>
+							</div> -->
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">About BAA</a>
@@ -186,7 +190,7 @@
 			</button>
 			<div class="carouselText">
 				<div class="carouselHeading row">
-					<h1>Raceday</h1>
+					<h1>Raceday is happening on site!</h1>
 				</div>
 				<div class="carouselBottomBtns row gx-3">
 					<div class="col carouselBtn">
@@ -755,7 +759,6 @@
 					></iframe>
 				</div>
 			</div>
-			<!-- divider -->
 		</div>
 
 		<footer class="footer">
@@ -857,5 +860,10 @@
 			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</body>
 </html>
