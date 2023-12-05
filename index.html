@@ -114,6 +114,7 @@
 			</div>
 		</nav>
 		<!-- carousel -->
+
 		<div
 			id="racedayCarousel"
 			class="carousel slide"
@@ -189,548 +190,572 @@
 				</div>
 				<div class="carouselBottomBtns row gx-3">
 					<div class="col carouselBtn">
-						<button class="btn" type="submit">Course Info</button>
+						<button class="btn" type="button">Course Info</button>
 					</div>
 					<div class="col carouselBtn">
-						<button class="btn" type="submit">Leaderboard</button>
+						<button class="btn" type="button">Leaderboard</button>
 					</div>
 					<div class="col carouselBtn">
-						<button class="btn" type="submit">Livestream</button>
+						<button class="btn" type="button">Livestream</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Leaderboard -->
-		<!-- referenced this page: https://cmubuggy.org/history/raceday/2023 -->
-		<div class="container-fluid row leaderboardNSchedule">
-			<div class="col-11 col-sm-12 col-lg-7">
-				<div class="row leaderboardHeading">
-					<h2 class="col-6 col-lg-4">Leaderboard</h2>
-					<a class="col additionalLink">see full version</a>
+		<div class="contentContainer">
+			<!-- Leaderboard -->
+			<!-- referenced this page: https://cmubuggy.org/history/raceday/2023 -->
+			<div class="container-fluid row leaderboardNSchedule">
+				<div
+					class="leaderboardContainer container-fluid col-12 col-sm-12 col-lg-7"
+				>
+					<div class="row leaderboardHeading">
+						<h2 class="col-6 col-lg-6">Leaderboard</h2>
+						<a class="col additionalLink">see full version</a>
+					</div>
+					<div class="leaderboardTabs">
+						<ul class="nav nav-tabs">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Men</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Women</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">All Gender</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tableContainer col-12">
+						<table>
+							<tr>
+								<th>Place</th>
+								<th>Team</th>
+								<th>Buggy</th>
+								<th>Prelims</th>
+								<th>Finals</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>PiKA A</td>
+								<td>Banshee</td>
+								<td>2:09.26</td>
+								<td>2:09.39</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Spirit A</td>
+								<td>Seraph</td>
+								<td>2:12.65</td>
+								<td>2:11.49</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Apex A</td>
+								<td>Firefly</td>
+								<td>2:15.00</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Spirit B</td>
+								<td>Mapambazuko</td>
+								<td>2:17.65</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Fringe B</td>
+								<td>Eileen</td>
+								<td>2:20.77</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>CIA C</td>
+								<td>Emperor</td>
+								<td>2:20.03</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>CIA B</td>
+								<td>Roadrunner</td>
+								<td>2:18.55</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>SigNu A</td>
+								<td>Jaeger</td>
+								<td>2:18.20</td>
+								<td>pending</td>
+							</tr>
+						</table>
+					</div>
 				</div>
-				<div class="leaderboardTabs">
-					<ul class="nav nav-tabs">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Men</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Women</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">All Gender</a>
-						</li>
-					</ul>
+				<!-- </div> -->
+				<div class="dividerContainer col-12">
+					<div class="divider"></div>
 				</div>
-				<div class="leaderboardContainer">
-					<table>
-						<tr>
-							<th>Place</th>
-							<th>Team</th>
-							<th>Buggy</th>
-							<th>Prelims</th>
-							<th>Finals</th>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>PiKA A</td>
-							<td>Banshee</td>
-							<td>2:09.26</td>
-							<td>2:09.39</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Spirit A</td>
-							<td>Seraph</td>
-							<td>2:12.65</td>
-							<td>2:11.49</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Apex A</td>
-							<td>Firefly</td>
-							<td>2:15.00</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Spirit B</td>
-							<td>Mapambazuko</td>
-							<td>2:17.65</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>Fringe B</td>
-							<td>Eileen</td>
-							<td>2:20.77</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td>CIA C</td>
-							<td>Emperor</td>
-							<td>2:20.03</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>7</td>
-							<td>CIA B</td>
-							<td>Roadrunner</td>
-							<td>2:18.55</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>8</td>
-							<td>SigNu A</td>
-							<td>Jaeger</td>
-							<td>2:18.20</td>
-							<td>pending</td>
-						</tr>
-					</table>
+
+				<!-- schedule at a glance -->
+				<!-- <div class="container-fluid col-md-4 leaderboardNSchedule"> -->
+				<div class="col-12 col-lg col-lg-4 schedule">
+					<div class="row">
+						<h2 class="col-12">Schedule at a Glance</h2>
+						<a class="col-12">see Spring Carnival Schedule</a>
+						<a class="col-12">see full Buggy schedule</a>
+					</div>
+					<div class="schedule">
+						<h3>Thursday, April 13</h3>
+						<div class="horizontalCards row">
+							<div class="col-5 col-lg-5 cardImg">
+								<img src="./images/buggyDesigns.jpeg" alt="buggy designs" />
+							</div>
+							<div class="customCardBody col col-lg">
+								<p class="scheduleTitle">Buggy Showcase</p>
+								<p class="scheduleLocation">
+									Weigand Gym (CUC 1st Floor) @ Noon
+								</p>
+								<p class="scheduleDescription">
+									View the latest buggy designs, talk with the teams, enjoy
+									kid-friendly buggy activities, and vote...
+								</p>
+							</div>
+						</div>
+						<div class="horizontalCards row">
+							<div class="col-5 col-lg-5 cardImg">
+								<img
+									src="./images/randomFoodPexels.jpg"
+									alt="food image taken from Pexels.com"
+								/>
+							</div>
+							<div class="customCardBody col">
+								<p class="scheduleTitle">Buggy Kickoff Dinner</p>
+								<p class="scheduleLocation">Fuel & Fuddle @ 8am</p>
+								<p class="scheduleDescription">
+									Come join the Buggy Alumni Association for our annual kickoff
+									dinner! Connect and catch up with...
+								</p>
+							</div>
+						</div>
+						<div class="horizontalCards row disappearOnLg">
+							<div class="col-5 col-lg-5 cardImg">
+								<img
+									src="./images/auction.jpg"
+									alt="food image taken from Pexels.com"
+								/>
+							</div>
+							<div class="customCardBody col">
+								<p class="scheduleTitle">Prelim Lead Truck Auction</p>
+								<p class="scheduleLocation">Online @ Until 11pm ET</p>
+								<p class="scheduleDescription">
+									Bid online on your favorite prelim heats for your chance at
+									the...
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="dividerContainer col-12">
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<!-- raceday resources -->
+			<div class="container-fluid row racedayResources">
+				<h2>Raceday Resources</h2>
+				<div class="row racedayResourcesCardsContainer gy-1">
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card">
+							<div class="row g-0">
+								<!-- this is for making it horizontal -->
+								<!-- card-img-top class initially below -->
+								<div class="col-4 col-md-12 iconImgContainer">
+									<img
+										class="iconImg"
+										src="./images/calendarIcon.png"
+										alt="calendar icon from FreeIconsPNG"
+									/>
+									<!-- https://www.freeiconspng.com/images/calendar-icon-png -->
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Heat Schedule</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card">
+							<div class="row g-0">
+								<div class="col-4 col-md-12 iconImgContainer">
+									<img
+										class="iconImg"
+										src="./images/rosterIcon.png"
+										alt="roster icon"
+									/>
+									<!-- https://thenounproject.com/browse/icons/term/roster/ -->
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Rosters</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card">
+							<div class="row g-0">
+								<div class="col-4 col-md-12 iconImgContainer">
+									<img
+										class="iconImg"
+										src="./images/photoIcon.png"
+										alt="photo icon"
+									/>
+									<!-- https://www.shareicon.net/images-image-photo-picture-gallery-pictures-880210#google_vignette -->
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Raceday Photos</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<!-- recent activities -->
+			<div class="container-fluid row racedayResources">
+				<h2>Recent Activities</h2>
+				<div class="row">
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card" id="rollsReportCard">
+							<div class="row g-0">
+								<!-- this is for making it horizontal -->
+								<!-- card-img-top class initially below -->
+								<div class="col-4 col-md-12 activitiesImgContainer">
+									<img
+										class="activitiesImg img-fluid"
+										src="./images/sunriseNov4.jpeg"
+										alt="image from BAA"
+									/>
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Rolls Report</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="col-12 indCardDiv">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-4 col-md-4 activitiesImgContainer">
+										<img
+											class="activitiesImg"
+											src="./images/baaBeanie.png"
+											alt="image from BAA"
+										/>
+									</div>
+									<div class="col-8 col-md-8">
+										<div class="card-body">
+											<p class="cardCenterHeading">
+												<b>Buggy Merch!</b>
+											</p>
+											<!-- <p class="card-text description showAtMd">
+                                                Show your Buggy Spirit this Fall! BAA Beanies are here in
+                                                2 different colors.
+                                            </p> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 indCardDiv">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-4 col-md-4 activitiesImgContainer">
+										<img
+											class="activitiesImg img-fluid"
+											src="./images/plaidBackground.png"
+											alt="CMU plaid background"
+										/>
+									</div>
+									<div class="col-8 col-md-8">
+										<div class="card-body">
+											<p class="card-text cardCenterHeading">
+												<b>Website Redesign Interview</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- divider -->
+			<div class="row dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<!-- Membership -->
+			<div class="container-fluid membership">
+				<h2 class="col-12">Membership</h2>
+				<div class="membershipContainer row">
+					<div class="col-lg-8">
+						<div class="membershipImgContainer">
+							<div class="row btnContainer gy-2">
+								<div class="membershipText">
+									<p>
+										We are really grateful for our members and everyone that
+										support us. If you like what you are seeing, get involved by
+										any of the following ways!
+									</p>
+								</div>
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/dollarIcon.png"
+													alt="dollar icon"
+												/>
+												<!-- https://www.freeiconspng.com/img/3561 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Donate any amount!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/discordIcon.png"
+													alt="discord icon"
+												/>
+												<!-- https://www.freeiconspng.com/img/43736 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Join our Discord Channel!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/newsIcon.png"
+													alt="news icon"
+												/>
+												<!-- https://www.freeiconspng.com/downloadimg/13614 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Click to Subscribe to Newsletter!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/contactIcon.png"
+													alt="contact icon"
+												/>
+												<!-- https://www.freeiconspng.com/downloadimg/13614 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Contact Us!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- membership types -->
+                    <div class="col-lg-4">
+					<div class="col-12 membershipsContainer gy-2">
+						<div class="col-12">
+							<p>Annual Membership –– $20+</p>
+							<button class="outsetBtn">Get Annual Membership</button>
+						</div>
+						<div class="col-12">
+							<p>Golden Goose Lifetime Membership –– $1,000+</p>
+							<button class="outsetBtn">Get Lifetime Membership</button>
+						</div>
+					</div>
+                </div>
+				</div>
+			</div>
+
+			<!-- divider -->
+			<div class="dividerContainer onlyMobile">
 				<div class="divider"></div>
 			</div>
 
-			<!-- schedule at a glance -->
-			<div class="col-12 col-lg schedule">
-				<div class="row">
-					<h2 class="col-12">Schedule at a Glance</h2>
-					<a class="col-12">see Spring Carnival Schedule</a>
-					<a class="col-12">see full Buggy schedule</a>
-				</div>
-				<div class="schedule">
-					<h3>Thursday, April 13</h3>
-					<div class="horizontalCards row">
-						<div class="col-3 col-lg-5 cardImg">
-							<img src="./images/buggyDesigns.jpeg" alt="buggy designs" />
-						</div>
-						<div class="customCardBody col">
-							<p class="scheduleTitle">Buggy Showcase</p>
-							<p class="scheduleLocation">Weigand Gym (CUC 1st Floor) @ Noon</p>
-							<p class="scheduleDescription">
-								View the latest buggy designs, talk with the teams, enjoy
-								kid-friendly buggy activities, and vote for the Buggy People’s
-								Choice Award.
-							</p>
-						</div>
-					</div>
-					<div class="horizontalCards row">
-						<div class="col-3 col-lg-5 cardImg">
-							<img
-								src="./images/randomFoodPexels.jpg"
-								alt="food image taken from Pexels.com"
-							/>
-						</div>
-						<div class="customCardBody col">
-							<p class="scheduleTitle">Buggy Kickoff Dinner</p>
-							<p class="scheduleLocation">Fuel & Fuddle @ 8am</p>
-							<p class="scheduleDescription">
-								Come join the Buggy Alumni Association for our annual kickoff
-								dinner! Connect and catch up with your fellow buggy alumni...
-							</p>
-						</div>
-					</div>
-					<div class="horizontalCards row">
-						<div class="col-3 col-lg-5 cardImg">
-							<img
-								src="./images/auction.jpg"
-								alt="food image taken from Pexels.com"
-							/>
-						</div>
-						<div class="customCardBody col">
-							<p class="scheduleTitle">Prelim Lead Truck Auction</p>
-							<p class="scheduleLocation">Online @ Until 11pm ET</p>
-							<p class="scheduleDescription">
-								Bid online on your favorite prelim heats for your chance at the
-								best buggy viewing experience!
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- divider -->
-		<div class="dividerContainer">
-			<div class="divider"></div>
-		</div>
-		<!-- raceday resources -->
-		<div class="container-fluid row racedayResources">
-			<h2>Raceday Resources</h2>
-			<div class="row gy-1">
-				<div class="col-12 col-md-4 indCardDiv">
-					<div class="card">
-						<div class="row g-0">
-							<!-- this is for making it horizontal -->
-							<!-- card-img-top class initially below -->
-							<div class="col-4 col-md-12 iconImgContainer">
-								<img
-									class="iconImg"
-									src="./images/calendarIcon.png"
-									alt="calendar icon from FreeIconsPNG"
-								/>
-								<!-- https://www.freeiconspng.com/images/calendar-icon-png -->
-							</div>
-							<div class="col-8 col-md-12">
-								<div class="card-body">
-									<p class="card-text cardCenterHeading">
-										<b>Heat Schedule</b>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 indCardDiv">
-					<div class="card">
-						<div class="row g-0">
-							<div class="col-4 col-md-12 iconImgContainer">
-								<img
-									class="iconImg"
-									src="./images/rosterIcon.png"
-									alt="roster icon"
-								/>
-								<!-- https://thenounproject.com/browse/icons/term/roster/ -->
-							</div>
-							<div class="col-8 col-md-12">
-								<div class="card-body">
-									<p class="card-text cardCenterHeading">
-										<b>Rosters</b>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 indCardDiv">
-					<div class="card">
-						<div class="row g-0">
-							<div class="col-4 col-md-12 iconImgContainer">
-								<img
-									class="iconImg"
-									src="./images/photoIcon.png"
-									alt="photo icon"
-								/>
-								<!-- https://www.shareicon.net/images-image-photo-picture-gallery-pictures-880210#google_vignette -->
-							</div>
-							<div class="col-8 col-md-12">
-								<div class="card-body">
-									<p class="card-text cardCenterHeading">
-										<b>Raceday Photos</b>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- divider -->
-		<div class="dividerContainer">
-			<div class="divider"></div>
-		</div>
-		<!-- recent activities -->
-		<div class="container-fluid row racedayResources">
-			<h2>Recent Activities</h2>
-			<div class="row gy-1">
-				<div class="col-12 col-md-4 indCardDiv">
-					<div class="card">
-						<div class="row g-0">
-							<!-- this is for making it horizontal -->
-							<!-- card-img-top class initially below -->
-							<div class="col-4 col-md-12 activitiesImgContainer">
-								<img
-									class="activitiesImg img-fluid"
-									src="./images/sunriseNov4.jpeg"
-									alt="image from BAA"
-								/>
-							</div>
-							<div class="col-8 col-md-12">
-								<div class="card-body">
-									<p class="card-text cardCenterHeading">
-										<b>Rolls Report</b>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 indCardDiv">
-					<div class="card">
-						<div class="row g-0">
-							<div class="col-4 col-md-12 activitiesImgContainer">
-								<img
-									class="activitiesImg"
-									src="./images/baaBeanie.png"
-									alt="image from BAA"
-								/>
-							</div>
-							<div class="col-8 col-md-12">
-								<div class="card-body">
-									<p class="card-text cardCenterHeading">
-										<b>Buggy Merch!</b>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 indCardDiv">
-					<div class="card">
-						<div class="row g-0">
-							<div class="col-4 col-md-12 activitiesImgContainer">
-								<img
-									class="activitiesImg img-fluid"
-									src="./images/plaidBackground.png"
-									alt="CMU plaid background"
-								/>
-							</div>
-							<div class="col-8 col-md-12">
-								<div class="card-body">
-									<p class="card-text cardCenterHeading">
-										<b>Website Redesign Interview</b>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- divider -->
-		<div class="dividerContainer">
-			<div class="divider"></div>
-		</div>
-		<!-- Membership -->
-		<div class="container-fluid membership">
-			<h2>Membership</h2>
-			<div class="row btnContainer gy-2">
-				<div class="col-12">
-					<button class="outsetBtn" type="button">
-						<div class="row">
-							<div class="col-2 btnIconImgContainer">
-								<!--div to separate image and text within the btn-->
-								<img
-									class="btnIconImg"
-									src="./images/dollarIcon.png"
-									alt="dollar icon"
-								/>
-								<!-- https://www.freeiconspng.com/img/3561 -->
-							</div>
-							<div class="col-10 btnTextContainer">
-								<p class="btnText">Donate any amount!</p>
-							</div>
-						</div>
-					</button>
-				</div>
-				<div class="col-12">
-					<button class="outsetBtn" type="button">
-						<div class="row">
-							<div class="col-2 btnIconImgContainer">
-								<!--div to separate image and text within the btn-->
-								<img
-									class="btnIconImg"
-									src="./images/discordIcon.png"
-									alt="discord icon"
-								/>
-								<!-- https://www.freeiconspng.com/img/43736 -->
-							</div>
-							<div class="col-10 btnTextContainer">
-								<p class="btnText">Join our Discord Channel!</p>
-							</div>
-						</div>
-					</button>
-				</div>
-
-				<div class="col-12">
-					<button class="outsetBtn" type="button">
-						<div class="row">
-							<div class="col-2 btnIconImgContainer">
-								<!--div to separate image and text within the btn-->
-								<img
-									class="btnIconImg"
-									src="./images/newsIcon.png"
-									alt="news icon"
-								/>
-								<!-- https://www.freeiconspng.com/downloadimg/13614 -->
-							</div>
-							<div class="col-10 btnTextContainer">
-								<p class="btnText">Click to Subscribe to Newsletter!</p>
-							</div>
-						</div>
-					</button>
-				</div>
-				<div class="col-12">
-					<button class="outsetBtn" type="button">
-						<div class="row">
-							<div class="col-2 btnIconImgContainer">
-								<!--div to separate image and text within the btn-->
-								<img
-									class="btnIconImg"
-									src="./images/contactIcon.png"
-									alt="contact icon"
-								/>
-								<!-- https://www.freeiconspng.com/downloadimg/13614 -->
-							</div>
-							<div class="col-10 btnTextContainer">
-								<p class="btnText">Contact Us!</p>
-							</div>
-						</div>
-					</button>
-				</div>
-			</div>
-			<!-- membership types -->
-			<div class="row membershipsContainer gy-2">
-				<div class="col-12">
-					<p>Annual Membership –– $20+</p>
-					<button class="outsetBtn">Get Annual Membership</button>
-				</div>
-				<div class="col-12">
-					<p>Golden Goose Lifetime Membership –– $1,000+</p>
-					<button class="outsetBtn">Get Lifetime Membership</button>
-				</div>
-			</div>
-		</div>
-
-		<!-- divider -->
-		<div class="dividerContainer">
-			<div class="divider"></div>
-		</div>
-
-		<!-- Recent News, only on mobile view -->
-		<div
-			id="carouselNews"
-			class="carousel slide carousel-dark carouselNewsContainer"
-		>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="card" style="width: 18rem">
-						<img
-							src="./images/rollsReportNov2023.jpeg"
-							class="card-img-top"
-							alt="rolls report image"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Rolls Report:</h5>
-							<p class="card-text">Nov 23, 2023</p>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="card" style="width: 18rem">
-						<img
-							src="./images/sunriseNov4.jpeg"
-							class="card-img-top"
-							alt="news image"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Title of News Article</h5>
-							<p class="card-text">Card 2</p>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="card" style="width: 18rem">
-						<img
-							src="./images/SDC Flagger.jpeg"
-							class="card-img-top"
-							alt="newsimage"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Title of News Article</h5>
-							<p class="card-text">Card 3</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carouselNews"
-				data-bs-slide="prev"
+			<!-- Recent News, only on mobile view -->
+			<div
+				id="carouselNews"
+				class="carousel slide carousel-dark carouselNewsContainer onlyMobile"
 			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button
-				class="carousel-control-next"
-				type="button"
-				data-bs-target="#carouselNews"
-				data-bs-slide="next"
-			>
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="card" style="width: 18rem">
+							<img
+								src="./images/rollsReportNov2023.jpeg"
+								class="card-img-top"
+								alt="rolls report image"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Rolls Report:</h5>
+								<p class="card-text">Nov 23, 2023</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card" style="width: 18rem">
+							<img
+								src="./images/sunriseNov4.jpeg"
+								class="card-img-top"
+								alt="news image"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Title of News Article</h5>
+								<p class="card-text">Card 2</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card" style="width: 18rem">
+							<img
+								src="./images/SDC Flagger.jpeg"
+								class="card-img-top"
+								alt="newsimage"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Title of News Article</h5>
+								<p class="card-text">Card 3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselNews"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselNews"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
 
-		<!-- divider -->
-		<div class="dividerContainer">
-			<div class="divider"></div>
-		</div>
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
 
-		<!-- homepage basics -->
-		<div class="row gx-2 homepageBasics">
-			<div class="col-6 overlayContainer">
-				<div class="card text-bg-dark">
-					<img
-						src="./images/BAAimage.jpeg"
-						class="overlayImg"
-						alt="image of BAA"
-					/>
-					<div class="card-img-overlay">
-						<h5 class="card-title">Who is BAA?</h5>
-						<p class="card-text">
-							<small
-								>We are an Alumni Intertest Group from Carnegie Mellon
-								University in Pittsburgh, PA.</small
-							>
-						</p>
+			<!-- homepage basics -->
+			<div class="row gx-2 homepageBasics">
+				<div class="col-6 overlayContainer">
+					<div class="card text-bg-dark">
+						<img
+							src="./images/BAAimage.jpeg"
+							class="overlayImg"
+							alt="image of BAA"
+						/>
+						<div class="card-img-overlay">
+							<h5 class="card-title">Who is BAA?</h5>
+							<p class="card-text">
+								<small
+									>We are an Alumni Intertest Group from Carnegie Mellon
+									University in Pittsburgh, PA.</small
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 overlayContainer">
+					<div class="card text-bg-dark">
+						<img
+							src="./images/buggy.jpg"
+							id="buggyImg"
+							class="overlayImg"
+							alt="image of buggy"
+						/>
+						<div class="card-img-overlay">
+							<h5 class="card-title">What is Buggy?</h5>
+							<p class="card-text">
+								<small
+									>Buggies are small, low, aerodynamic vehicles, powered only by
+									gravity and human pushers</small
+								>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-6 overlayContainer">
-				<div class="card text-bg-dark">
-					<img
-						src="./images/buggy.jpg"
-						id="buggyImg"
-						class="overlayImg"
-						alt="image of buggy"
-					/>
-					<div class="card-img-overlay">
-						<h5 class="card-title">What is Buggy?</h5>
-						<p class="card-text">
-							<small
-								>Buggies are small, low, aerodynamic vehicles, powered only by
-								gravity and human pushers</small
-							>
-						</p>
-					</div>
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<div class="podcastContainer">
+				<div class="col-12">
+					<iframe
+						style="border-radius: 12px"
+						src="https://open.spotify.com/embed/show/3wbaYb92dfzuWDUbOOxHWi?utm_source=generator"
+						width="100%"
+						height="200"
+						frameborder="0"
+						allowfullscreen=""
+						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+						loading="lazy"
+					></iframe>
 				</div>
 			</div>
-        </div>
-        <!-- divider -->
-		<div class="dividerContainer">
-			<div class="divider"></div>
-		</div>
-        <div class="row">
-			<div class="col-12">
-				<iframe
-					style="border-radius: 12px"
-					src="https://open.spotify.com/embed/show/3wbaYb92dfzuWDUbOOxHWi?utm_source=generator"
-					width="100%"
-					height="200"
-					frameborder="0"
-					allowfullscreen=""
-					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-					loading="lazy"
-				></iframe>
-			</div>
-		</div>
-
-		<!-- divider -->
-		<div class="dividerContainer">
-			<div class="divider"></div>
+			<!-- divider -->
 		</div>
 
 		<!-- Bootstrap Popper and JS link -->

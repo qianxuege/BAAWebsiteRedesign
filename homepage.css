@@ -7,12 +7,23 @@ a {
 	color: gray;
 }
 
+body {
+    overflow-x: hidden;
+
+}
+
+.contentContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .dividerContainer {
 	width: 100%;
 	height: 0.8vmin;
 	margin: 5vmin auto;
 	background-color: #8b0000;
 }
+
 
 .inline-block {
 	display: inline-flex;
@@ -151,6 +162,7 @@ a {
 .carouselBottomBtns .carouselBtn {
 	width: 100%;
 	text-align: center;
+    
 }
 
 .carouselBottomBtns .btn {
@@ -165,9 +177,11 @@ a {
 
 /* Leaderboard */
 
+
 .nav-tabs {
 	border-bottom: 1px solid #8b0000;
 	color: black;
+    
 }
 
 .nav-link {
@@ -178,9 +192,18 @@ a {
 	border: 1px solid #8b0000;
 }
 
+.leaderboardContainer {
+    position: relative;
+}
+
+.leaderboardContainer .tableContainer {
+    overflow:scroll;
+}
+
 table {
 	width: 100%;
 	border-collapse: collapse;
+    position: relative;
 	/* border: 1px solid gray; */
 }
 
@@ -195,14 +218,16 @@ th {
 
 td,
 th {
-	padding: 0.2rem;
+	padding: 0.4rem;
+    /* padding: 0.4rem; */
 	/* 0.8vmin */
 }
 
 .leaderboardNSchedule {
 	margin-top: 2vmin;
 	margin-bottom: 3vmin;
-	margin-left: 0.2vmin;
+
+	/* margin-left: 0.2vmin; */
 }
 
 .leaderboardNSchedule a {
@@ -232,11 +257,16 @@ th {
 	margin-top: 1vmin;
 }
 
+
+
 .horizontalCards .cardImg img {
-	width: 20vmin; /* 15vmin*/
-	height: 25vmin; /* 20vmin */
+	/* width: 20vmin;
+	height: 25vmin;  */
+    width: 100%;
+    height: 18vmin; /*40vmin*/
 	object-fit: cover; /* Ensure the image covers the area without distortion */
 }
+
 
 .horizontalCards .customCardBody p {
 	margin-top: 0.2rem;
@@ -245,18 +275,21 @@ th {
 
 .horizontalCards .scheduleTitle {
 	font-family: "Inter", sans-serif;
-	font-size: 1.4rem;
+	font-size: 1rem;
+    /* font-size: 1.4rem; */
 	color: #ab0606;
 }
 
 .horizontalCards .scheduleLocation {
 	font-family: "Inter", sans-serif;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
+    /* font-size: 0.8rem; */
 }
 
 .horizontalCards .scheduleDescription {
 	margin-top: 0.5rem;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
+    display: none;
 }
 
 /* raceday resources */
@@ -267,7 +300,14 @@ th {
 .racedayResources {
 	margin-top: 2vmin;
 	margin-bottom: 3vmin;
-	margin-left: 0.8vmin;
+}
+
+.racedayResources .indCardDiv {
+    margin-bottom: 2vmin;
+}
+
+.racedayResourcesCardsContainer {
+    width: 100%;
 }
 
 .racedayResources .card {
@@ -297,26 +337,49 @@ th {
 	height: 16vmin;
 }
 
-.activitiesImgContainer {
-	height: 16vmin;
-}
 
 .activitiesImg {
 	width: 100%; /* 15vmin*/
-	height: 16vmin; /* 20vmin */
+	height: 16vmin; /*20vmin*/
 	object-fit: cover;
 }
 
 /* Membership */
+
+
 .membership {
 	margin-top: 2vmin;
-	margin-bottom: 3vmin;
-	margin-left: 0.8vmin;
+	/* margin-bottom: 3vmin; */
+	/* margin-left: 3vmin; */
+    width: 100%;
+    
 }
 
-.btnContainer {
-	margin-bottom: 8vmin;
+.membership .membershipImgContainer {
+    /* background-color: red; */
+    background-image: url("./images/BAAimage.jpeg");
+    /* height: 1000px; */
+    /* width: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 3vmin;
+    margin-bottom: 2vmin;
 }
+
+.membership .btnContainer {
+	background-color:#4b4a4a4a;
+    
+}
+
+.membership .membershipText {
+    color: white;
+}
+
+
+
+
 
 .outsetBtn {
 	border: 4px outset rgb(211, 209, 209);
@@ -333,6 +396,7 @@ th {
 .btnIconImg {
 	width: 100%;
 	padding: 1vmin;
+    object-fit: cover;
 }
 
 .outsetBtn .btnTextContainer {
@@ -345,15 +409,18 @@ th {
 	margin: 0 auto;
 }
 
+
 .membershipsContainer {
 	background-color: #8b0000;
 	color: white;
+    /* border-radius: 5vmin; */
+	padding: 4vmin;
+    /* padding-bottom: 5vmin; */
 }
 
-.membershipsContainer {
-	border-radius: 5vmin;
-	padding: 2vmin;
-	margin-bottom: 8vmin;
+.membershipsContainer .outsetBtn {
+    height: 8vmin;
+    margin-bottom: 3vmin;
 }
 
 /* phone Recent News */
@@ -361,6 +428,8 @@ th {
     margin-top: 3vmin;
     margin-bottom: 2vmin;
 }
+
+
 
 .carouselNewsContainer .card-img-top {
     height: 50vmin;
@@ -371,9 +440,16 @@ th {
 .carouselNewsContainer .card {
     text-align: center;
     margin:auto;
+    border-top-right-radius: 3vmin;
+    border-top-left-radius: 3vmin;
 }
 
 /* homepage basics */
+.homepageBasics {
+    width: 100%;
+    /* margin-left: 3vmin; */
+}
+
 .homepageBasics .card-img-overlay { 
     /*this is the text over the image*/
     background-color:#4b4a4a4a;
@@ -396,22 +472,18 @@ th {
     object-fit: cover;
 }
 
-.homepageBasics .overlayContainer {
 
 
-}
-
-#buggyImg {
-    /* height: 100vmin; */
-    
-}
 
 .homepageBasics .card-img-overlay p {
     line-height: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
-	.carouselBottomBtns {
+	.onlyMobile {
+        display: none;
+    }
+    .carouselBottomBtns {
 		top: 24vmin;
 	}
 
@@ -419,14 +491,24 @@ th {
 		height: 10vmin;
 	}
 
+    .leaderboardContainer {
+        position: relative;
+        left: 0;
+    }
+
 	.horizontalCards .cardImg img {
-		width: 20vmin; /* Increased width of the image */
-		height: 18vmin;
+		/* width: 20vmin; */
+		height: 18vmin; 
+        /* height: 18vmin; */
 	}
 
 	.schedule {
 		margin-top: 2vmin;
 	}
+
+    .horizontalCards .scheduleDescription {
+        display: block;
+    }
 
 	.racedayResources .card-body {
 		height: 10vmin;
@@ -450,14 +532,27 @@ th {
 		height: 7vmin;
 	}
 
-	.horizontalCards .cardImg img {
-		width: 20vmin; /* Increased width of the image */
-		height: 14vmin;
-	}
 
-	.schedule {
-		margin-top: 1vmin;
-	}
+    .activitiesImgContainer, .activitiesImg {
+        height: 17vmin;
+    }
+
+    .outsetBtn, .membershipsContainer .outsetBtn, .btnIconImgContainer {
+        height: 7vmin;
+    }
+
+    .outsetBtn .btnIconImg {
+        width: 55%;
+        position: relative;
+        top: -0.7vmin;
+    }
+
+    #rollsReportCard .activitiesImgContainer, #rollsReportCard .activitiesImg {
+        height: 30vmin;
+    }
+
+    
+
 }
 
 @media screen and (min-width: 992px) {
@@ -465,13 +560,17 @@ th {
 		top: 32vmin; /*40vmin*/
 	}
 
+    .disappearOnLg {
+        display: none;
+    }
+
 	.horizontalCards .cardImg img {
-		width: 20vmin; /* Increased width of the image */
-		height: 28vmin;
+		/* width: 20vmin; */
+		height: 22vmin; 
 	}
 
 	.leaderboardNSchedule {
-		margin-left: 3vmin;
+		padding-left: 3vmin;
 	}
 
 	.leaderboardNSchedule .dividerContainer {
@@ -481,6 +580,12 @@ th {
 	.schedule {
 		margin-top: 0;
 	}
+
+    .outsetBtn .btnIconImg {
+        width: 80%;
+    }
+
+
 
 	#racedayCarousel {
 		height: 75vmin;
@@ -492,10 +597,15 @@ th {
 		top: 43vmin;
 	}
 
-	.horizontalCards .cardImg img {
-		width: 28vmin; /* Increased width of the image */
-		height: 20vmin;
-	}
+    .outsetBtn, .membershipsContainer .outsetBtn, .btnIconImgContainer {
+        height: 8vmin;
+    }
+
+    .outsetBtn .btnIconImg {
+        width: 60%;
+    }
+
+
 
 	#racedayCarousel {
 		height: 85vmin;
