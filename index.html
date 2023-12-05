@@ -31,58 +31,88 @@
 		/>
 	</head>
 	<body>
-
 		<div class="header-top">
-            <div class="container-fluid"> <!-- Changed to container-fluid for full width -->
-              <div class="row">
-                <div class="col-12 col-md-6"> <!-- Responsive columns -->
-                  <span>CMU BUGGY ALUMNI ASSOCIATION</span>
-                </div>
-                <div class="col-12 col-md-6 text-md-right race-info"> <!-- Text alignment changes on medium devices -->
-                  <span>Race Day in 2024: Apr 12 - 13</span>
-                </div>
-              </div>
-            </div>
-          </div>
-            
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid"> <!-- Changed to container-fluid -->
-              <a class="navbar-brand" href="index.html">
-                <img src="./images/shield-in-circle.svg" alt="Logo" height="100" class="img-fluid"> <!-- img-fluid for responsive image -->
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
-                    </li>
-                    <li class="nav-item dropdown nav-fill">
-                      <a class="nav-link dropdown-toggle" href="history.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        History
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Past Race Results</a>
-                        <a class="dropdown-item" href="#">Buggies and Buggy Organizations</a>
-                        <a class="dropdown-item" href="#">Media</a>
-                        <a class="dropdown-item" href="#">Our 100 Years of Buggy Blog Series</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About BAA</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          
-            </nav>
+			<div class="container-fluid">
+				<!-- Changed to container-fluid for full width -->
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<!-- Responsive columns -->
+						<span>CMU BUGGY ALUMNI ASSOCIATION</span>
+					</div>
+					<div class="col-12 col-md-6 text-md-right race-info">
+						<!-- Text alignment changes on medium devices -->
+						<span>Race Day in 2024: Apr 12 - 13</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<!-- Changed to container-fluid -->
+				<a class="navbar-brand" href="index.html">
+					<img
+						src="./images/shield-in-circle.svg"
+						alt="Logo"
+						height="100"
+						class="img-fluid"
+					/>
+					<!-- img-fluid for responsive image -->
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="history.html"
+								id="navbarDropdownMenuLink"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								History
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<a class="dropdown-item" href="#">Past Race Results</a>
+								<a class="dropdown-item" href="#"
+									>Buggies and Buggy Organizations</a
+								>
+								<a class="dropdown-item" href="#">Media</a>
+								<a class="dropdown-item" href="#"
+									>Our 100 Years of Buggy Blog Series</a
+								>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About BAA</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<!-- carousel -->
 		<div
 			id="racedayCarousel"
@@ -172,10 +202,10 @@
 		</div>
 		<!-- Leaderboard -->
 		<!-- referenced this page: https://cmubuggy.org/history/raceday/2023 -->
-		<div class="container-fluid row  leaderboardNSchedule">
-			<div class=" col-11 col-sm-12 col-lg-7">
+		<div class="container-fluid row leaderboardNSchedule">
+			<div class="col-11 col-sm-12 col-lg-7">
 				<div class="row leaderboardHeading">
-					<h2 class="col-5 col-lg-4">Leaderboard</h2>
+					<h2 class="col-6 col-lg-4">Leaderboard</h2>
 					<a class="col additionalLink">see full version</a>
 				</div>
 				<div class="leaderboardTabs">
@@ -259,9 +289,9 @@
 					</table>
 				</div>
 			</div>
-            <div class="dividerContainer col-12">
-                <div class="divider"></div>
-            </div>
+			<div class="dividerContainer col-12">
+				<div class="divider"></div>
+			</div>
 
 			<!-- schedule at a glance -->
 			<div class="col-12 col-lg schedule">
@@ -321,58 +351,246 @@
 				</div>
 			</div>
 		</div>
-        <!-- divider -->
+		<!-- divider -->
 		<div class="dividerContainer">
 			<div class="divider"></div>
 		</div>
 		<!-- raceday resources -->
 		<div class="container-fluid row racedayResources">
 			<h2>Raceday Resources</h2>
-			<div class="row">
-                <div class="col-4 indCardDiv">
-                    <div class="card">
-                        <div class="iconImgContainer card-img-top">
-                            <img class="iconImg" src="./images/calendarIcon.png"  alt="calendar icon from FreeIconsPNG" />
-                            <!-- https://www.freeiconspng.com/images/calendar-icon-png -->
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cardCenterHeading">
-                                <b>Heat Schedule</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 indCardDiv">
-                    <div class="card">
-                        <div class="iconImgContainer card-img-top">
-                            <img class="iconImg" src="./images/rosterIcon.png"  alt="roster icon" />
-                            <!-- https://thenounproject.com/browse/icons/term/roster/ -->
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cardCenterHeading">
-                                <b>Rosters</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 indCardDiv">
-                    <div class="card">
-                        <div class="iconImgContainer card-img-top">
-                            <img class="iconImg" src="./images/photoIcon.png"  alt="photo icon" />
-                            <!-- https://www.shareicon.net/images-image-photo-picture-gallery-pictures-880210#google_vignette -->
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cardCenterHeading">
-                                <b>Raceday Photos</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+			<div class="row gy-1">
+				<div class="col-12 col-md-4 indCardDiv">
+					<div class="card">
+						<div class="row g-0">
+							<!-- this is for making it horizontal -->
+							<!-- card-img-top class initially below -->
+							<div class="col-4 col-md-12 iconImgContainer">
+								<img
+									class="iconImg"
+									src="./images/calendarIcon.png"
+									alt="calendar icon from FreeIconsPNG"
+								/>
+								<!-- https://www.freeiconspng.com/images/calendar-icon-png -->
+							</div>
+							<div class="col-8 col-md-12">
+								<div class="card-body">
+									<p class="card-text cardCenterHeading">
+										<b>Heat Schedule</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 indCardDiv">
+					<div class="card">
+						<div class="row g-0">
+							<div class="col-4 col-md-12 iconImgContainer">
+								<img
+									class="iconImg"
+									src="./images/rosterIcon.png"
+									alt="roster icon"
+								/>
+								<!-- https://thenounproject.com/browse/icons/term/roster/ -->
+							</div>
+							<div class="col-8 col-md-12">
+								<div class="card-body">
+									<p class="card-text cardCenterHeading">
+										<b>Rosters</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 indCardDiv">
+					<div class="card">
+						<div class="row g-0">
+							<div class="col-4 col-md-12 iconImgContainer">
+								<img
+									class="iconImg"
+									src="./images/photoIcon.png"
+									alt="photo icon"
+								/>
+								<!-- https://www.shareicon.net/images-image-photo-picture-gallery-pictures-880210#google_vignette -->
+							</div>
+							<div class="col-8 col-md-12">
+								<div class="card-body">
+									<p class="card-text cardCenterHeading">
+										<b>Raceday Photos</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-        <!-- divider -->
-        <div class="dividerContainer">
+		<!-- divider -->
+		<div class="dividerContainer">
 			<div class="divider"></div>
+		</div>
+		<!-- recent activities -->
+		<div class="container-fluid row racedayResources">
+			<h2>Recent Activities</h2>
+			<div class="row gy-1">
+				<div class="col-12 col-md-4 indCardDiv">
+					<div class="card">
+						<div class="row g-0">
+							<!-- this is for making it horizontal -->
+							<!-- card-img-top class initially below -->
+							<div class="col-4 col-md-12 activitiesImgContainer">
+								<img
+									class="activitiesImg img-fluid"
+									src="./images/sunriseNov4.jpeg"
+									alt="image from BAA"
+								/>
+							</div>
+							<div class="col-8 col-md-12">
+								<div class="card-body">
+									<p class="card-text cardCenterHeading">
+										<b>Rolls Report</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 indCardDiv">
+					<div class="card">
+						<div class="row g-0">
+							<div class="col-4 col-md-12 activitiesImgContainer">
+								<img
+									class="activitiesImg"
+									src="./images/baaBeanie.png"
+									alt="image from BAA"
+								/>
+							</div>
+							<div class="col-8 col-md-12">
+								<div class="card-body">
+									<p class="card-text cardCenterHeading">
+										<b>Buggy Merch!</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 indCardDiv">
+					<div class="card">
+						<div class="row g-0">
+							<div class="col-4 col-md-12 activitiesImgContainer">
+								<img
+									class="activitiesImg img-fluid"
+									src="./images/plaidBackground.png"
+									alt="CMU plaid background"
+								/>
+							</div>
+							<div class="col-8 col-md-12">
+								<div class="card-body">
+									<p class="card-text cardCenterHeading">
+										<b>Website Redesign Interview</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="dividerContainer">
+			<div class="divider"></div>
+		</div>
+		<!-- Membership -->
+		<div class="container-fluid membership">
+			<h2>Membership</h2>
+			<div class="row btnContainer gy-2">
+				<div class="col-12">
+					<button class="outsetBtn" type="button">
+						<div class="row">
+							<div class="col-2 btnIconImgContainer">
+								<!--div to separate image and text within the btn-->
+								<img
+									class="btnIconImg"
+									src="./images/dollarIcon.png"
+									alt="dollar icon"
+								/>
+								<!-- https://www.freeiconspng.com/img/3561 -->
+							</div>
+							<div class="col-10 btnTextContainer">
+								<p class="btnText">Donate any amount!</p>
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="col-12">
+					<button class="outsetBtn" type="button">
+						<div class="row">
+							<div class="col-2 btnIconImgContainer">
+								<!--div to separate image and text within the btn-->
+								<img
+									class="btnIconImg"
+									src="./images/discordIcon.png"
+									alt="discord icon"
+								/>
+								<!-- https://www.freeiconspng.com/img/43736 -->
+							</div>
+							<div class="col-10 btnTextContainer">
+								<p class="btnText">Join our Discord Channel!</p>
+							</div>
+						</div>
+					</button>
+				</div>
+
+				<div class="col-12">
+					<button class="outsetBtn" type="button">
+						<div class="row">
+							<div class="col-2 btnIconImgContainer">
+								<!--div to separate image and text within the btn-->
+								<img
+									class="btnIconImg"
+									src="./images/newsIcon.png"
+									alt="news icon"
+								/>
+								<!-- https://www.freeiconspng.com/downloadimg/13614 -->
+							</div>
+							<div class="col-10 btnTextContainer">
+								<p class="btnText">Click to Subscribe to Newsletter!</p>
+							</div>
+						</div>
+					</button>
+				</div>
+                <div class="col-12">
+					<button class="outsetBtn" type="button">
+						<div class="row">
+							<div class="col-2 btnIconImgContainer">
+								<!--div to separate image and text within the btn-->
+								<img
+									class="btnIconImg"
+									src="./images/contactIcon.png"
+									alt="contact icon"
+								/>
+								<!-- https://www.freeiconspng.com/downloadimg/13614 -->
+							</div>
+							<div class="col-10 btnTextContainer">
+								<p class="btnText">Contact Us!</p>
+							</div>
+						</div>
+					</button>
+				</div>
+			</div>
+            <!-- membership types -->
+            <div class="row membershipsContainer gy-2">
+                <div class="col-12">
+                    <p>Annual Membership –– $20+</p>
+                    <button class="outsetBtn">Get Annual Membership</button>
+                </div>
+                <div class="col-12">
+                    <p>Golden Goose Lifetime Membership –– $1,000+</p>
+                    <button class="outsetBtn">Get Lifetime Membership</button>
+                </div>
+            </div>
 		</div>
 
 		<!-- Bootstrap Popper and JS link -->

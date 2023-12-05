@@ -138,12 +138,14 @@ a {
 	text-align: center;
 	width: 100%;
 	color: white;
+	margin: 0 auto;
 }
 
 .carouselBottomBtns {
 	position: absolute;
 	width: 100%;
 	top: 25vmin; /*40vmin*/
+	margin: 0 auto;
 }
 
 .carouselBottomBtns .carouselBtn {
@@ -193,13 +195,14 @@ th {
 
 td,
 th {
-	padding: 2vmin;
+	padding: 0.2rem;
+	/* 0.8vmin */
 }
 
 .leaderboardNSchedule {
 	margin-top: 2vmin;
 	margin-bottom: 3vmin;
-	margin-left: 0.6vmin;
+	margin-left: 0.2vmin;
 }
 
 .leaderboardNSchedule a {
@@ -272,11 +275,14 @@ th {
 }
 
 .racedayResources .card-body {
-	height: 17vmin;
+	height: 16vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .iconImgContainer {
-	height: 25vmin;
+	height: 16vmin;
 	background-color: #f2f5ef;
 	display: flex;
 	justify-content: center;
@@ -284,9 +290,70 @@ th {
 }
 
 .iconImg {
-	/* position: absolute; */
-	/* margin: auto; */
-	width: 20vmin;
+	width: 10vmin;
+}
+
+.activitiesImgContainer {
+	height: 16vmin;
+}
+
+.activitiesImgContainer {
+	height: 16vmin;
+}
+
+.activitiesImg {
+	width: 100%; /* 15vmin*/
+	height: 16vmin; /* 20vmin */
+	object-fit: cover;
+}
+
+/* Membership */
+.membership {
+	margin-top: 2vmin;
+	margin-bottom: 3vmin;
+	margin-left: 0.8vmin;
+}
+
+.btnContainer {
+	margin-bottom: 8vmin;
+}
+
+.outsetBtn {
+	border: 4px outset rgb(211, 209, 209);
+	border-radius: 5vmin;
+	width: 100%;
+	background-color: white;
+	color: #ab0606;
+}
+
+/*.btnIconImgContainer {
+    background-color: red;
+} */
+
+.btnIconImg {
+	width: 100%;
+	padding: 1vmin;
+}
+
+.outsetBtn .btnTextContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outsetBtn .btnText {
+	margin: 0 auto;
+}
+
+.membershipsContainer {
+	background-color: #8b0000;
+	color: white;
+}
+
+.membershipsContainer {
+	border-radius: 5vmin;
+	padding: 2vmin;
+	margin-bottom: 8vmin;
 }
 
 @media screen and (min-width: 576px) {
@@ -305,6 +372,18 @@ th {
 
 	.schedule {
 		margin-top: 2vmin;
+	}
+
+	.racedayResources .card-body {
+		height: 10vmin;
+	}
+
+	.iconImgContainer {
+		height: 10vmin;
+	}
+
+	.iconImg {
+		width: 8vmin;
 	}
 }
 
