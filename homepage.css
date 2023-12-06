@@ -43,6 +43,7 @@ body {
 }
 
 .navbar {
+	
 	padding: 0;
 	margin-top: 0;
 }
@@ -54,7 +55,21 @@ body {
 	float: left;
 }
 
+#putToRight{
+	float:right;
+}
+
+.separation{
+    width: 80%;
+    margin: 10% ;
+    height: 2px;
+	border-bottom: 1px solid #8B0000;
+	position: absolute;
+}
+
+
 .navbar-nav .nav-link {
+	
 	color: black;
 }
 .navbar-dark .navbar-toggler {
