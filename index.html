@@ -36,14 +36,16 @@
 				<div class="row">
 					<div class="col-12 col-md-6">
 						<span>CMU BUGGY ALUMNI ASSOCIATION</span>
-						<div class="mobile-only">
-							<img
-								src="images/shield-in-circle.svg"
-								alt="Small Logo"
-								style="height: 30px"
-							/>
-							<span>BAA</span>
-						</div>
+						<a href="index.html">
+							<div class="mobile-only">
+								<img
+									src="images/shield-in-circle.svg"
+									alt="Small Logo"
+									style="height: 30px"
+								/>
+								<span class="nav-link">BAA</span>
+							</div>
+						</a>
 						<!-- No separate span for 'BAA', we will use CSS to inject this content -->
 					</div>
 					<div class="col-12 col-md-6 text-md-right race-info">
@@ -78,7 +80,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="#">News</a>
 						</li>
 						<li class="nav-item">
@@ -89,23 +91,10 @@
 								class="nav-link dropdown-toggle"
 								href="history.html"
 								id="navbarDropdownMenuLink"
-								
 							>
 								History
 							</a>
-							<!-- <div
-								class="dropdown-menu"
-								aria-labelledby="navbarDropdownMenuLink"
-							>
-								<a class="dropdown-item" href="#">Past Race Results</a>
-								<a class="dropdown-item" href="#"
-									>Buggies and Buggy Organizations</a
-								>
-								<a class="dropdown-item" href="#">Media</a>
-								<a class="dropdown-item" href="#"
-									>Our 100 Years of Buggy Blog Series</a
-								>
-							</div> -->
+							<!-- deleted history dropdown so could access the history page -->
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">About BAA</a>
@@ -209,154 +198,157 @@
 			<!-- Leaderboard -->
 			<!-- referenced this page: https://cmubuggy.org/history/raceday/2023 -->
 			<div class="container-fluid row leaderboardNSchedule">
-				<div
-					class="leaderboardContainer container-fluid col-12 col-sm-12 col-lg-7"
-				>
-					<div class="row leaderboardHeading">
-						<h2 class="col-6 col-lg-6">Leaderboard</h2>
-						<a class="col additionalLink">see full version</a>
+				<div class="leaderboardContainer container-fluid row">
+					<div class="col-12 col-sm-12 col-lg-7">
+						<div class="row leaderboardHeading">
+							<h2 class="col-6 col-lg-6">Leaderboard</h2>
+							<a class="col additionalLink">see full version</a>
+						</div>
+						<div class="leaderboardTabs">
+							<ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#"
+										>Men</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Women</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">All Gender</a>
+								</li>
+							</ul>
+						</div>
+						<div class="tableContainer col-12">
+							<table>
+								<tr>
+									<th>Place</th>
+									<th>Team</th>
+									<th>Buggy</th>
+									<th>Prelims</th>
+									<th>Finals</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>PiKA A</td>
+									<td>Banshee</td>
+									<td>2:09.26</td>
+									<td>2:09.39</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Spirit A</td>
+									<td>Seraph</td>
+									<td>2:12.65</td>
+									<td>2:11.49</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Apex A</td>
+									<td>Firefly</td>
+									<td>2:15.00</td>
+									<td>pending</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Spirit B</td>
+									<td>Mapambazuko</td>
+									<td>2:17.65</td>
+									<td>pending</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Fringe B</td>
+									<td>Eileen</td>
+									<td>2:20.77</td>
+									<td>pending</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>CIA C</td>
+									<td>Emperor</td>
+									<td>2:20.03</td>
+									<td>pending</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>CIA B</td>
+									<td>Roadrunner</td>
+									<td>2:18.55</td>
+									<td>pending</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>SigNu A</td>
+									<td>Jaeger</td>
+									<td>2:18.20</td>
+									<td>pending</td>
+								</tr>
+							</table>
+						</div>
 					</div>
-					<div class="leaderboardTabs">
-						<ul class="nav nav-tabs">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Men</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Women</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">All Gender</a>
-							</li>
-						</ul>
-					</div>
-					<div class="tableContainer col-12">
-						<table>
-							<tr>
-								<th>Place</th>
-								<th>Team</th>
-								<th>Buggy</th>
-								<th>Prelims</th>
-								<th>Finals</th>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>PiKA A</td>
-								<td>Banshee</td>
-								<td>2:09.26</td>
-								<td>2:09.39</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Spirit A</td>
-								<td>Seraph</td>
-								<td>2:12.65</td>
-								<td>2:11.49</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Apex A</td>
-								<td>Firefly</td>
-								<td>2:15.00</td>
-								<td>pending</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Spirit B</td>
-								<td>Mapambazuko</td>
-								<td>2:17.65</td>
-								<td>pending</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Fringe B</td>
-								<td>Eileen</td>
-								<td>2:20.77</td>
-								<td>pending</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>CIA C</td>
-								<td>Emperor</td>
-								<td>2:20.03</td>
-								<td>pending</td>
-							</tr>
-							<tr>
-								<td>7</td>
-								<td>CIA B</td>
-								<td>Roadrunner</td>
-								<td>2:18.55</td>
-								<td>pending</td>
-							</tr>
-							<tr>
-								<td>8</td>
-								<td>SigNu A</td>
-								<td>Jaeger</td>
-								<td>2:18.20</td>
-								<td>pending</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<!-- </div> -->
-				<div class="dividerContainer col-12">
-					<div class="divider"></div>
-				</div>
 
-				<!-- schedule at a glance -->
-				<!-- <div class="container-fluid col-md-4 leaderboardNSchedule"> -->
-				<div class="col-12 col-lg col-lg-4 schedule">
-					<div class="row">
-						<h2 class="col-12">Schedule at a Glance</h2>
-						<a class="col-12">see Spring Carnival Schedule</a>
-						<a class="col-12">see full Buggy schedule</a>
+					<!-- </div> -->
+					<div class="dividerContainer col-12">
+						<div class="divider"></div>
 					</div>
-					<div class="schedule">
-						<h3>Thursday, April 13</h3>
-						<div class="horizontalCards row">
-							<div class="col-5 col-lg-5 cardImg">
-								<img src="./images/buggyDesigns.jpeg" alt="buggy designs" />
-							</div>
-							<div class="customCardBody col col-lg">
-								<p class="scheduleTitle">Buggy Showcase</p>
-								<p class="scheduleLocation">
-									Weigand Gym (CUC 1st Floor) @ Noon
-								</p>
-								<p class="scheduleDescription">
-									View the latest buggy designs, talk with the teams, enjoy
-									kid-friendly buggy activities, and vote...
-								</p>
-							</div>
+
+					<!-- schedule at a glance -->
+					<!-- <div class="container-fluid col-md-4 leaderboardNSchedule"> -->
+					<div class="col-12 col-lg col-lg-4 schedule">
+						<div class="row">
+							<h2 class="col-12">Schedule at a Glance</h2>
+							<a class="col-12">see Spring Carnival Schedule</a>
+							<a class="col-12">see full Buggy schedule</a>
 						</div>
-						<div class="horizontalCards row">
-							<div class="col-5 col-lg-5 cardImg">
-								<img
-									src="./images/randomFoodPexels.jpg"
-									alt="food image taken from Pexels.com"
-								/>
+						<div class="schedule">
+							<h3>Thursday, April 13</h3>
+							<div class="horizontalCards row">
+								<div class="col-5 col-lg-5 cardImg">
+									<img src="./images/buggyDesigns.jpeg" alt="buggy designs" />
+								</div>
+								<div class="customCardBody col col-lg">
+									<p class="scheduleTitle">Buggy Showcase</p>
+									<p class="scheduleLocation">
+										Weigand Gym (CUC 1st Floor) @ Noon
+									</p>
+									<p class="scheduleDescription">
+										View the latest buggy designs, talk with the teams, enjoy
+										kid-friendly buggy activities, and vote...
+									</p>
+								</div>
 							</div>
-							<div class="customCardBody col">
-								<p class="scheduleTitle">Buggy Kickoff Dinner</p>
-								<p class="scheduleLocation">Fuel & Fuddle @ 8am</p>
-								<p class="scheduleDescription">
-									Come join the Buggy Alumni Association for our annual kickoff
-									dinner! Connect and catch up with...
-								</p>
+							<div class="horizontalCards row">
+								<div class="col-5 col-lg-5 cardImg">
+									<img
+										src="./images/randomFoodPexels.jpg"
+										alt="food image taken from Pexels.com"
+									/>
+								</div>
+								<div class="customCardBody col">
+									<p class="scheduleTitle">Buggy Kickoff Dinner</p>
+									<p class="scheduleLocation">Fuel & Fuddle @ 8am</p>
+									<p class="scheduleDescription">
+										Come join the Buggy Alumni Association for our annual
+										kickoff dinner! Connect and catch up with...
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="horizontalCards row disappearOnLg">
-							<div class="col-5 col-lg-5 cardImg">
-								<img
-									src="./images/auction.jpg"
-									alt="food image taken from Pexels.com"
-								/>
-							</div>
-							<div class="customCardBody col">
-								<p class="scheduleTitle">Prelim Lead Truck Auction</p>
-								<p class="scheduleLocation">Online @ Until 11pm ET</p>
-								<p class="scheduleDescription">
-									Bid online on your favorite prelim heats for your chance at
-									the...
-								</p>
+							<div class="horizontalCards row disappearOnLg">
+								<div class="col-5 col-lg-5 cardImg">
+									<img
+										src="./images/auction.jpg"
+										alt="food image taken from Pexels.com"
+									/>
+								</div>
+								<div class="customCardBody col">
+									<p class="scheduleTitle">Prelim Lead Truck Auction</p>
+									<p class="scheduleLocation">Online @ Until 11pm ET</p>
+									<p class="scheduleDescription">
+										Bid online on your favorite prelim heats for your chance at
+										the...
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -367,7 +359,7 @@
 				<div class="divider"></div>
 			</div>
 			<!-- raceday resources -->
-			<div class="container-fluid row racedayResources">
+			<div class="container-fluid row racedayResources gx-0">
 				<h2>Raceday Resources</h2>
 				<div class="row racedayResourcesCardsContainer gy-1">
 					<div class="col-12 col-md-4 indCardDiv">
@@ -442,7 +434,7 @@
 				<div class="divider"></div>
 			</div>
 			<!-- recent activities -->
-			<div class="container-fluid row racedayResources">
+			<div class="container-fluid row racedayResources gx-0">
 				<h2>Recent Activities</h2>
 				<div class="row">
 					<div class="col-12 col-md-4 indCardDiv">
@@ -520,7 +512,7 @@
 				<div class="divider"></div>
 			</div>
 			<!-- Membership -->
-			<div class="container-fluid membership">
+			<div class="container-fluid row gx-0 membership">
 				<h2 class="col-12">Membership</h2>
 				<div class="membershipContainer row">
 					<div class="col-lg-8">
@@ -631,7 +623,7 @@
 			</div>
 
 			<!-- Recent News, only on mobile view -->
-			<div
+			<!--<div
 				id="carouselNews"
 				class="carousel slide carousel-dark carouselNewsContainer onlyMobile"
 			>
@@ -694,49 +686,51 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
-			</div>
+			</div> 
 
-			<!-- divider -->
+
 			<div class="dividerContainer">
 				<div class="divider"></div>
-			</div>
+			</div> -->
 
 			<!-- homepage basics -->
-			<div class="row gx-2 homepageBasics">
-				<div class="col-6 overlayContainer">
-					<div class="card text-bg-dark">
-						<img
-							src="./images/BAAimage.jpeg"
-							class="overlayImg"
-							alt="image of BAA"
-						/>
-						<div class="card-img-overlay">
-							<h5 class="card-title">Who is BAA?</h5>
-							<p class="card-text">
-								<small
-									>We are an Alumni Intertest Group from Carnegie Mellon
-									University in Pittsburgh, PA.</small
-								>
-							</p>
+			<div class="container-fluid row gx-3 homepageBasics">
+				<div class="row gx-2">
+					<div class="col-6 overlayContainer">
+						<div class="card text-bg-dark">
+							<img
+								src="./images/BAAimage.jpeg"
+								class="overlayImg"
+								alt="image of BAA"
+							/>
+							<div class="card-img-overlay">
+								<h5 class="card-title">Who is BAA?</h5>
+								<p class="card-text">
+									<small
+										>We are an Alumni Intertest Group from Carnegie Mellon
+										University in Pittsburgh, PA.</small
+									>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-6 overlayContainer">
-					<div class="card text-bg-dark">
-						<img
-							src="./images/buggy.jpg"
-							id="buggyImg"
-							class="overlayImg"
-							alt="image of buggy"
-						/>
-						<div class="card-img-overlay">
-							<h5 class="card-title">What is Buggy?</h5>
-							<p class="card-text">
-								<small
-									>Buggies are small, low, aerodynamic vehicles, powered only by
-									gravity and human pushers</small
-								>
-							</p>
+					<div class="col-6 overlayContainer">
+						<div class="card text-bg-dark">
+							<img
+								src="./images/buggy.jpg"
+								id="buggyImg"
+								class="overlayImg"
+								alt="image of buggy"
+							/>
+							<div class="card-img-overlay">
+								<h5 class="card-title">What is Buggy?</h5>
+								<p class="card-text">
+									<small
+										>Buggies are small, low, aerodynamic vehicles, powered only
+										by gravity and human pushers</small
+									>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -745,8 +739,9 @@
 			<div class="dividerContainer">
 				<div class="divider"></div>
 			</div>
+
 			<div class="podcastContainer">
-				<div class="col-12">
+				<div class="row col-12">
 					<iframe
 						style="border-radius: 12px"
 						src="https://open.spotify.com/embed/show/3wbaYb92dfzuWDUbOOxHWi?utm_source=generator"
