@@ -292,6 +292,10 @@
     margin: 0% 10% 5% 10%;
 }
 
+#card_separation2{
+    margin: 1% 0px 1% 0px;
+}
+
 
 /* 3/3 section "Helpful Resources" css */
 
@@ -305,6 +309,7 @@
     margin: 0% 10% 5% 10%;
 }
 
+
 /* others */
 .separation{
     width: 100%;
@@ -315,7 +320,20 @@
 
 
 
+
+/* Only mobile css: */
+@media screen and (min-width: 768px) {
+	.onlyMobile {
+		display: none;
+	}
+}
+
+/* Only small screen css: */
 @media screen and (max-width: 768px){
+    .onlyLaptop{
+        display: none;
+    }
+
     .whatIsBuggy{
         min-width: 100%;
         margin: auto;
@@ -336,8 +354,30 @@
         width: 100%;
     }
 
+     .footer .col-md-4:not(:last-child) {
+      margin-bottom: 20px; /* Add space between columns when they stack on mobile */
+    }
+
+    .mobileNotDisplay{
+      display: none;
+    }
+
+    .onlyMobile{
+        margin: 5% 25% 10% 25%;
+    }
+
+    .mobilecarouseltext{
+        text-align: center;
+        margin: 3px;
+        font-size: 20px;
+    }
+
     #card_separation{
         margin: 2% 0px 2% 0px;
+    }
+
+    #card_mobile{
+        width: 100%
     }
 
 }
@@ -345,42 +385,33 @@
 
 /* footer css */
 .footer {
-  background-color: #f2f2f2; /* or any color you prefer */
-  padding: 20px 0;
-}
-
-.social-icon {
-  /* Add styles for your social icons here */
-  margin-right: 5px; /* space between icons */
-}
-
-.footer-link {
-  display: block; /* each link on its own line */
-  margin-bottom: 5px; /* space between links */
-}
-
-.contact-email, .copyright {
-  margin-bottom: 10px;
-}
-.social-icon {
-  display: inline-block;
-  margin-right: 5px; /* Adjust the space between icons */
-  height: 30px; /* Adjust based on your design */
-  width: 30px; /* Adjust based on your design */
-}
-
-.social-icon img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain; /* This will make sure the image fits nicely within the dimensions */
-}
-
-
-@media (max-width: 768px) {
-  .footer .col-md-4:not(:last-child) {
-    margin-bottom: 20px; /* Add space between columns when they stack on mobile */
+    background-color: #f2f2f2; /* or any color you prefer */
+    padding: 20px 0;
   }
-  .mobileNotDisplay{
-    display: none;
+  
+  .social-icon {
+    /* Add styles for your social icons here */
+    margin-right: 5px; /* space between icons */
   }
-}
+  
+  .footer-link {
+    display: block; /* each link on its own line */
+    margin-bottom: 5px; /* space between links */
+  }
+  
+  .contact-email, .copyright {
+    margin-bottom: 10px;
+  }
+  .social-icon {
+    display: inline-block;
+    margin-right: 5px; /* Adjust the space between icons */
+    height: 30px; /* Adjust based on your design */
+    width: 30px; /* Adjust based on your design */
+  }
+  
+  .social-icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* This will make sure the image fits nicely within the dimensions */
+  }
+  

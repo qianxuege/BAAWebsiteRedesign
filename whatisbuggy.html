@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="whatisbuggy.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
     <title>What is Buggy</title>
 </head>
 <body>
@@ -200,11 +199,11 @@
 
 
     <!-- Helpful Resources -->
-    <div class="third_container">
+    <div class="third_container onlyLaptop">
       <hr class="separation">
         <p class="top_intro">Helpful Resources</p>
         <div class="row">
-        <div class="col-12 col-md-4" id="card_separation">
+        <div class="col-12 col-md-4" id="card_separation2">
             <div class="card2">
                 <img src="images/buggy_map.png" class="card-img-top" alt="buggy_map">
                 <div class="card-body">
@@ -216,7 +215,7 @@
         <br>
        
         <!-- This is column 2 -->
-        <div class="col-12 col-md-4" id="card_separation">
+        <div class="col-12 col-md-4" id="card_separation2">
             <div class="card2">
                 <img src="images/endowment.jpeg" class="card-img-top" alt="endowment">
                 <div class="card-body">
@@ -224,8 +223,8 @@
                     <p class="card-text"><u>“Are you a student? Get free money for your buggy idea!”</u></p>
                 </div>
             </div>
-        </div>  
-        <div class="col-12 col-md-4" id="card_separation">
+        </div> 
+        <div class="col-12 col-md-4" id="card_separation2">
             <div class="card2">
                 <img src="images/makeabuggy.png" class="card-img-top" alt="make_a_buggy">
                 <div class="card-body">
@@ -237,9 +236,37 @@
     </div>
     </div>
 
+ 
+    <!-- Recent News, only on mobile view -->
+    <div id="carouselExampleInterval" class="carousel slide onlyMobile" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="card_mobile" data-interval="6000">
+          <img src="images/buggy_map.png" class="d-block w-100 h-80"  alt="buggy_map">
+          <p class="mobilecarouseltext">Buggy Race Rules</p>
+        </div>
 
+        <div class="carousel-item" id="card_mobile" data-interval="2000">
+          <img src="images/endowment.jpeg" class="d-block w-100 h-80" alt="endowment">
+          <p class="mobilecarouseltext">BAA Endowment Fund</p>
+        </div>
+
+        <div class="carousel-item" id="card_mobile" data-interval="2000">
+          <img src="images/makeabuggy.png" class="d-block w-100 h-80" alt="make_a_buggy">
+          <p class="mobilecarouseltext">How to Build a Buggy</p>
+         </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"  aria-hidden="false"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    
     <!-- Footer -->
-
   <footer class="footer">
     <div class="container">
       <div class="row">
