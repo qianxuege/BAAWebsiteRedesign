@@ -17,6 +17,11 @@
 .navbar-brand {
   font-size: 1.5em;
 }
+
+.nav-link{
+  float:left;
+}
+
 .navbar-nav .nav-link {
   color: black; 
 }
