@@ -30,7 +30,7 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body>
+	<body onload="changeTableVisibility(1)">
 		<div class="header-top">
 			<div class="container-fluid">
 				<div class="row">
@@ -77,55 +77,38 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div id="navbarNavDropdown">
-				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav ml-auto" id="putToRight">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">News</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="history.html"
-								id="navbarDropdownMenuLink"
-								
-							>
-								History
-							</a>
-							<!-- <div
-								class="dropdown-menu"
-								aria-labelledby="navbarDropdownMenuLink"
-							>
-								<a class="dropdown-item" href="#">Past Race Results</a>
-								<a class="dropdown-item" href="#"
-									>Buggies and Buggy Organizations</a
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto" id="putToRight">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">News</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="history.html"
+									id="navbarDropdownMenuLink"
 								>
-								<a class="dropdown-item" href="#">Media</a>
-								<a class="dropdown-item" href="#"
-									>Our 100 Years of Buggy Blog Series</a
-								>
-							</div> -->
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About BAA</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Gallery</a>
-						</li>
-					</ul>
-					
+									History
+								</a>
+								<!-- removed the drop down menu for easier access to history page -->
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About BAA</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Gallery</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				
 			</div>
-			
-			</div>
-			<hr class="separation">
-			
+			<!-- added this div as the bottom border of nav labels -->
+			<div class="separation"></div>
 		</nav>
-	
-		
+
 		<!-- carousel -->
 
 		<div
@@ -203,7 +186,7 @@
 				</div>
 				<div class="carouselBottomBtns row gx-3">
 					<div class="col carouselBtn">
-						<button class="btn" type="button">Course Info</button>
+						<button class="btn" type="button">Course Map</button>
 					</div>
 					<div class="col carouselBtn">
 						<button class="btn" type="button">Leaderboard</button>
@@ -219,7 +202,7 @@
 			<!-- referenced this page: https://cmubuggy.org/history/raceday/2023 -->
 			<div class="container-fluid row leaderboardNSchedule">
 				<div
-					class="leaderboardContainer container-fluid col-12 col-sm-12 col-lg-7"
+					class="leaderboardContainer container-fluid col-12 col-sm-12 col-lg-8 gx-5"
 				>
 					<div class="row leaderboardHeading">
 						<h2 class="col-6 col-lg-6">Leaderboard</h2>
@@ -228,18 +211,18 @@
 					<div class="leaderboardTabs">
 						<ul class="nav nav-tabs">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Men</a>
+								<a class="nav-link active" id="tab1" aria-current="page">Men</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Women</a>
+								<a class="nav-link" id="tab2">Women</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">All Gender</a>
+								<a class="nav-link" id="tab3">All Gender</a>
 							</li>
 						</ul>
 					</div>
 					<div class="tableContainer col-12">
-						<table>
+						<table id="tab1Table">
 							<tr>
 								<th>Place</th>
 								<th>Team</th>
@@ -304,6 +287,115 @@
 								<td>pending</td>
 							</tr>
 						</table>
+						<table id="tab2Table">
+							<tr>
+								<th>Place</th>
+								<th>Team</th>
+								<th>Buggy</th>
+								<th>Prelims</th>
+								<th>Finals</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Spirit A</td>
+								<td>Seraph</td>
+								<td>2:42.92</td>
+								<td>2:35.28</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>CIA A</td>
+								<td>Equinox</td>
+								<td>2:36.67</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Fringe A</td>
+								<td>Baltic</td>
+								<td>2:44.49</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>PIKA A</td>
+								<td>Banshee</td>
+								<td>2:45.51</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>SigNu A</td>
+								<td>Jaeger</td>
+								<td>2:47.69</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Apex A</td>
+								<td>Firefly</td>
+								<td>2:49.19</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>CIA B</td>
+								<td>Roadrunner</td>
+								<td>2:46.59</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>CIA C</td>
+								<td>Emperor</td>
+								<td>2:51.29</td>
+								<td>pending</td>
+							</tr>
+						</table>
+						<table id="tab3Table">
+							<tr>
+								<th>Place</th>
+								<th>Team</th>
+								<th>Buggy</th>
+								<!-- <th>Prelims</th> -->
+								<th>Finals</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Apex A</td>
+								<td>Firefly</td>
+								<!-- <td>2:42.92</td> -->
+								<td>2:45.58</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>PIKA A</td>
+								<td>Raptor</td>
+								<!-- <td>2:36.67</td> -->
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>CIA A</td>
+								<td>Equinox</td>
+								<!-- <td>2:44.49</td> -->
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Spirit A</td>
+								<td>Inviscid</td>
+								<!-- <td>2:45.51</td> -->
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Fringe A</td>
+								<td>Burnout</td>
+								<!-- <td>2:47.69</td> -->
+								<td>pending</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 				<!-- </div> -->
@@ -313,7 +405,7 @@
 
 				<!-- schedule at a glance -->
 				<!-- <div class="container-fluid col-md-4 leaderboardNSchedule"> -->
-				<div class="col-12 col-lg col-lg-4 schedule">
+				<div class="col-12 col-lg-4 schedule">
 					<div class="row">
 						<h2 class="col-12">Schedule at a Glance</h2>
 						<a class="col-12">see Spring Carnival Schedule</a>
@@ -531,7 +623,7 @@
 			<!-- Membership -->
 			<div class="container-fluid membership">
 				<h2 class="col-12">Membership</h2>
-				<div class="membershipContainer row">
+				<div class="membershipContainer row gy-4">
 					<div class="col-lg-8">
 						<div class="membershipImgContainer">
 							<div class="row btnContainer gy-2">
@@ -634,12 +726,12 @@
 				</div>
 			</div>
 
-			<!-- divider -->
-			<div class="dividerContainer onlyMobile">
+			<!-- Recent News, only on mobile view -->
+			<!--<div class="dividerContainer onlyMobile">
 				<div class="divider"></div>
 			</div>
 
-			<!-- Recent News, only on mobile view -->
+			
 			<div
 				id="carouselNews"
 				class="carousel slide carousel-dark carouselNewsContainer onlyMobile"
@@ -684,7 +776,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> 
 				<button
 					class="carousel-control-prev"
 					type="button"
@@ -703,7 +795,7 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
-			</div>
+			</div> -->
 
 			<!-- divider -->
 			<div class="dividerContainer">
@@ -857,6 +949,8 @@
 				</div>
 			</div>
 		</footer>
+		<!-- custom JS for nav tabs -->
+		<script src="script.js"></script>
 
 		<!-- Bootstrap Popper and JS link -->
 		<script

@@ -60,11 +60,13 @@ body {
 }
 
 .separation{
-    width: 80%;
-    margin: 10% ;
+    width: 85%;
+	display: none;
     height: 2px;
-	border-bottom: 1px solid #8B0000;
+	background-color: #8B0000;
 	position: absolute;
+	top: 62%;
+	left: 13%;
 }
 
 
@@ -81,7 +83,7 @@ body {
 }
 
 .navbar-collapse {
-	border-bottom: 2px solid #8b0000; /* 2px solid border with your chosen color */
+	/*border-bottom: 2px solid #8b0000; /* 2px solid border with your chosen color */
 	margin-top: 0;
 	padding: 0;
 }
@@ -209,6 +211,17 @@ body {
 	color: black;
 }
 
+/* the display is controlled in the script.js file. */
+/* specific tabs for js access 
+#tab2Table {
+	display: none;
+}
+
+#tab3Table {
+	display: none;
+}
+*/
+
 .nav-link {
 	color: black;
 }
@@ -243,7 +256,7 @@ th {
 }
 
 .leaderboardNSchedule {
-	margin-top: 2vmin;
+	margin-top: 6vmin;
 	margin-bottom: 3vmin;
 }
 
@@ -652,7 +665,12 @@ th {
 	}
 }
 
+
 @media screen and (min-width: 992px) {
+	.separation {
+		display: block;
+	}
+
 	.carouselBottomBtns {
 		top: 32vmin; /*40vmin*/
 	}
