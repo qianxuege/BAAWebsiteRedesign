@@ -38,6 +38,10 @@ body {
 	margin-top: 0;
 }
 
+.header-top a {
+	text-decoration: none;
+}
+
 .header-top span {
 	display: block; /* or your existing style */
 }
@@ -547,9 +551,7 @@ th {
 	.navbar-toggler {
 		position: relative;
 		top: -11vmin;
-		/* width: 100%; */
 		left: 85%;
-		
 	}
 	.navbar-collapse {
 		position: relative;
