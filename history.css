@@ -263,10 +263,16 @@
   .navbar-brand img {
     display: none;
   }
-  .navbar-toggler{
-    position:relative;
-    top: -14vmin;
-  }
+
+  .header-top a {
+    text-decoration: none;
+   }
+   
+  .navbar-toggler {
+    position: relative;
+    top: -11vmin;
+   }
+
   .navbar-collapse{
     position:relative;
     top: -13vmin;

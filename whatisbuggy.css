@@ -11,6 +11,10 @@
   margin-top: 0;
 }
 
+.header-top a {
+  text-decoration: none;
+ }
+
 .header-top span {
   display: block; /* or your existing style */
 }
@@ -177,10 +181,11 @@
     display: none;
   }
 
-  .navbar-toggler{
-    position:relative;
-    top: -14vmin;
-  }
+   .navbar-toggler {
+    position: relative;
+    top: -11vmin;
+   }
+
   .navbar-collapse{
     position:relative;
     top: -13vmin;
