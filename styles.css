@@ -29,7 +29,6 @@ a {
 }
 
 .inline-block {
-	/*not sure if need this*/
 	display: inline-flex;
 }
 
@@ -54,7 +53,6 @@ a {
 }
 
 .header-top span {
-	/*not sure if need this*/
 	display: block;
 }
 
@@ -96,7 +94,6 @@ a {
 
 
 .navbar-dark .navbar-toggler {
-	/* not sure if need this */
 	border-color: rgb(129, 127, 127);
 }
 
