@@ -1,324 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="whatisbuggy.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>What is Buggy</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="styles.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<title>What is Buggy</title>
+	</head>
+	<body class="buggyPage">
+		<!-- This is top nav bar -->
+		<div class="header-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<span>CMU BUGGY ALUMNI ASSOCIATION</span>
+						<a href="index.html">
+							<div class="mobile-only">
+								<img
+									src="images/shield-in-circle.svg"
+									alt="Small Logo"
+									style="height: 30px"
+								/>
+								<span id="BAAText">BAA</span>
+								<span id="BuggyAlumniAssociationText"
+									>CMU BUGGY ALUMNI ASSOCIATION</span
+								>
+							</div>
+						</a>
+						<!-- No separate span for 'BAA', we will use CSS to inject this content -->
+					</div>
+					<div class="col-12 col-md-6 text-md-right race-info">
+						<span>Race Day in 2024: Apr 12 - 13</span>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- This is top nav bar -->
-    <div class="header-top">
-      <div class="container-fluid">
-        <div class="row">
-          
-          <div class="col-12 col-md-6">
-            <span>CMU BUGGY ALUMNI ASSOCIATION</span>
-            <a href="index.html">
-            <div class = "mobile-only">
-              <img src="images/shield-in-circle.svg" alt="Small Logo" style="height: 30px;">
-              <span>BAA</span>
-            </div>
-            </a>
-            <!-- No separate span for 'BAA', we will use CSS to inject this content -->
-          </div>
-          <div class="col-12 col-md-6 text-md-right race-info">
-            <span>Race Day in 2024: Apr 12 - 13</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid"> <!-- Changed to container-fluid -->
-    <a class="navbar-brand" href="index.html">
-      <img class = "desk-top-view" src="images/shield-in-circle.svg" alt="Logo" class="img-fluid"> <!-- img-fluid for responsive image -->
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item nav-fill active">
-            <a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="history.html" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-            History
-            </a>
-          <!-- deleted data-toggle="dropdown" here, or always fail to navigate to History page -->
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Past Race Results</a>
-              <a class="dropdown-item" href="#">Buggies and Buggy Organizations</a>
-              <a class="dropdown-item" href="#">Media</a>
-              <a class="dropdown-item" href="#">Our 100 Years of Buggy Blog Series</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About BAA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container-fluid">
+				<!-- Changed to container-fluid -->
+				<a class="navbar-brand desk-top-view" href="index.html">
+					<img
+						class="desk-top-view"
+						src="images/shield-in-circle.svg"
+						alt="Logo"
+						class="img-fluid"
+					/>
+					<!-- img-fluid for responsive image -->
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-fill" href="whatisbuggy.html">What is Buggy</a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="history.html">History</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About BAA</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
+		<!-- Home -> What is Buggy section-->
+		<div class="header">
+			<div class="container">
+				<div class="breadcrumb-container container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<span class="navgoingto"
+								><a class="homelink" href="index.html">Home</a> > What is
+								Buggy</span
+							>
+						</div>
+					</div>
+				</div>
+				<h1 class="whatisbuggyheader">What is Buggy</h1>
+			</div>
+		</div>
 
-      <!-- Home -> What is Buggy section-->
-      <div class="header">
-        <div class="container">
-          <div class="breadcrumb-container container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <span class="navgoingto"><a class="homelink" href="index.html">Home</a>
-                > What is Buggy</span>
-              </div>
-            </div>
-          </div>
-          <h1 class="whatisbuggyheader">What is Buggy</h1>
-        </div>
-      </div>
-       
+		<!-- This is the carousel for the images -->
+		<div
+			id="carouselExampleCaptions"
+			class="carousel slide"
+			data-ride="carousel"
+		>
+			<ol class="carousel-indicators">
+				<li
+					data-target="#carouselExampleCaptions"
+					data-slide-to="0"
+					class="active"
+				></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="images/whatisbuggy_background1.jpeg"
+						class="d-block w-100 h-80"
+						alt="background1"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h4>2022 BUGGY HEAT</h4>
+						<p>
+							2022 - Fringe B's Justin Zhang pushes Burnout across the Finish
+							Line in Men's Heat 12. Credit: Ben Matzke
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/whatisbuggy_background2.jpeg"
+						class="d-block w-100 h-80"
+						alt="background2"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h4>2023 BUGGY HEAT</h4>
+						<p>
+							2023 - Fringe A's Ace Engel shoves Baltic to Olivia Corrodi at the
+							Hill 1-2 Transition in Lane 1 of Women's Finals Heat 4. Credit:
+							Ben Matzke
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/whatisbuggy_background3.jpeg"
+						class="d-block w-100 h-80"
+						alt="background3"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h4>2024 PRACTICE SESSION</h4>
+						<p>Practice Session. Credit: Matt Gallabrese</p>
+					</div>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="false"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="false"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<br /><br />
 
+		<!-- This is What is Buggy Grid (left) and When is it (right) -->
+		<div class="top_container">
+			<div class="whatIsBuggy">
+				<p class="top_intro">What is Buggy</p>
+				<p>
+					Buggy (also called Sweepstakes) is a race held annually since 1920 at
+					Carnegie Mellon. Teams of five athletes (the pushers) push an
+					un-motorized vehicle (a buggy) containing a driver around a 0.84 mile
+					course in a relay format where the vehicle serves as the baton.
+					Roughly half of the course is uphill, during which the pushers run and
+					shove the buggy uphill. During the other - downhill - half, drivers
+					are on their own to navigate tight turns at speeds of up to 35mph.
+				</p>
+				<a
+					href="https://cmubuggy.org/reference/"
+					class="btn btn-lg"
+					id="readmore"
+					role="button"
+					>Read more about the race</a
+				>
+				<p><br /></p>
+			</div>
 
-    <!-- This is the carousel for the images -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/whatisbuggy_background1.jpeg" class="d-block w-100 h-80" alt="background1">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>2022 BUGGY HEAT</h4>
-              <p>2022 - Fringe B's Justin Zhang pushes Burnout across the Finish Line in
-                Men's Heat 12. Credit: Ben Matzke</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/whatisbuggy_background2.jpeg" class="d-block w-100 h-80" alt="background2">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>2023 BUGGY HEAT</h4>
-              <p>2023 - Fringe A's Ace Engel shoves Baltic to Olivia Corrodi at the Hill 1-2 Transition
-                in Lane 1 of Women's Finals Heat 4. Credit: Ben Matzke</p>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/whatisbuggy_background3.jpeg" class="d-block w-100 h-80" alt="background3">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>2024 PRACTICE SESSION</h4>
-              <p>Practice Session. Credit: Matt Gallabrese</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="false"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <br><br>
+			<div class="whenIsIt">
+				<p class="top_intro">When is it</p>
+				<p>
+					Raceday: CMU's Spring Carnival, generally in mid-April on Friday and
+					Saturday 8am - noon.
+				</p>
+				<p>Practice: Sept-Nov and Feb-April on Weekends Sunrise - 9am.</p>
+			</div>
+		</div>
 
+		<!-- Begin your buggy journey  -->
+		<div class="middle_container">
+			<hr class="separation" />
+			<p class="top_intro">Begin Your Buggy Journey</p>
+			<div>
+				<iframe
+					class="video"
+					src="https://www.youtube.com/embed/jYU8GYxAbXI?si=oKvQcwC_44V2iap-"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+			</div>
 
+			<div class="row">
+				<div class="col-12" id="card_separation">
+					<div class="card1 bg-cmu">
+						<div class="card-body">
+							<h5 class="card-title" style="color: white">JOIN A TEAM</h5>
+							<p class="card_text"><u>“Check out our current team list!”</u></p>
+						</div>
+					</div>
+				</div>
+				<!-- This is column 2 -->
+				<div class="col-12" id="card_separation">
+					<div class="card1 bg-cmu">
+						<div class="card-body">
+							<h5 class="card-title" style="color: white">START A TEAM</h5>
+							<p class="card_text">
+								<u
+									>“All things you want to know before starting your own
+									team!”</u
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12" id="card_separation">
+					<div class="card1 bg-cmu">
+						<div class="card-body">
+							<h5 class="card-title" style="color: white">STARTER KIT</h5>
+							<p class="card_text">
+								<u
+									>“Check our information for people who have never tried buggy
+									before!”</u
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- This is What is Buggy Grid (left) and When is it (right) -->
-    <div class="top_container">
-        <div class="whatIsBuggy">
-            <p class="top_intro">What is Buggy</p>
-            <p>Buggy (also called Sweepstakes) is a race held annually since 1920
-                at Carnegie Mellon. Teams of five athletes (the pushers) push an
-                un-motorized vehicle (a buggy) containing a driver around a 0.84 
-                mile course in a relay format where the vehicle serves as the baton.
-                Roughly half of the course is uphill, during which the pushers run
-                and shove the buggy uphill. During the other - downhill - half,
-                drivers are on their own to navigate tight turns at speeds of up to 35mph.</p>
-            <a href="https://cmubuggy.org/reference/" class="btn btn-lg" id="readmore" role="button">Read more about the race</a>
-            <p><br></p>
-        </div>
-      
-        <div class="whenIsIt">
-            <p class="top_intro">When is it</p>
-            <p>Raceday: CMU's Spring Carnival, generally in mid-April on Friday and Saturday 8am - noon.</p>
-            <p>Practice: Sept-Nov and Feb-April on Weekends Sunrise - 9am.</p>
-        </div>
-    </div>
-    
+		<!-- Helpful Resources -->
+		<div class="third_container onlyLaptop">
+			<hr class="separation" />
+			<p class="top_intro">Helpful Resources</p>
+			<div class="row">
+				<div class="col-12 col-md-4" id="card_separation2">
+					<div class="card2">
+						<img
+							src="images/buggy_map.png"
+							class="card-img-top"
+							alt="buggy_map"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Buggy Race Rules</h5>
+							<p class="card-text">
+								<u
+									>“Learn about buggy race rules as a beginner: buggy rules, map
+									of the course......”</u
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+				<br />
 
-    
-    
-    <!-- Begin your buggy journey  -->
-    <div class="middle_container">
-      <hr class="separation">
-        <p class="top_intro">Begin Your Buggy Journey</p>
-        <div>
-          <iframe class="video" src="https://www.youtube.com/embed/jYU8GYxAbXI?si=oKvQcwC_44V2iap-"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-        </div>
-        
-        <div class="row">
-        <div class="col-12" id="card_separation">
-            <div class="card1 bg-cmu">
-                <div class="card-body">
-                <h5 class="card-title" style="color: white">JOIN A TEAM</h5>
-                <p class="card_text"><u>“Check out our current team list!”</u></p>
-                </div>
-            </div>
-        </div>
-        <!-- This is column 2 -->
-        <div class="col-12" id="card_separation">
-            <div class="card1 bg-cmu">
-                <div class="card-body">
-                <h5 class="card-title" style="color: white">START A TEAM</h5>
-                <p class="card_text"><u>“All things you want to know before starting your own team!”</u></p>
-                </div>
-            </div>
-        </div>  
-        <div class="col-12" id="card_separation">
-            <div class="card1 bg-cmu">
-                <div class="card-body">
-                <h5 class="card-title" style="color: white">STARTER KIT</h5>
-                <p class="card_text"><u>“Check our information for people who have never tried buggy before!”</u></p>
-                </div>
-            </div>
-        </div> 
-      </div>
-      
-    </div>
-    
+				<!-- This is column 2 -->
+				<div class="col-12 col-md-4" id="card_separation2">
+					<div class="card2">
+						<img
+							src="images/endowment.jpeg"
+							class="card-img-top"
+							alt="endowment"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">BAA Endowment Fund</h5>
+							<p class="card-text">
+								<u>“Are you a student? Get free money for your buggy idea!”</u>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4" id="card_separation2">
+					<div class="card2">
+						<img
+							src="images/makeabuggy.png"
+							class="card-img-top"
+							alt="make_a_buggy"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">How to Build a Buggy</h5>
+							<p class="card-text">
+								<u
+									>“Build your own buggy from 0! Learn the design, mechanics,
+									structures......!”</u
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- Recent News, only on mobile view -->
+		<div
+			id="carouselExampleInterval"
+			class="carousel slide onlyMobile"
+			data-ride="carousel"
+		>
+			<div class="carousel-inner">
+				<div class="carousel-item active" id="card_mobile" data-interval="6000">
+					<img
+						src="images/buggy_map.png"
+						class="d-block w-100 h-80"
+						alt="buggy_map"
+					/>
+					<p class="mobilecarouseltext">Buggy Race Rules</p>
+				</div>
 
-    <!-- Helpful Resources -->
-    <div class="third_container onlyLaptop">
-      <hr class="separation">
-        <p class="top_intro">Helpful Resources</p>
-        <div class="row">
-        <div class="col-12 col-md-4" id="card_separation2">
-            <div class="card2">
-                <img src="images/buggy_map.png" class="card-img-top" alt="buggy_map">
-                <div class="card-body">
-                    <h5 class="card-title">Buggy Race Rules</h5>
-                    <p class="card-text"><u>“Learn about buggy race rules as a beginner: buggy rules, map of the course......”</u></p>
-                </div>
-            </div>
-        </div>
-        <br>
-       
-        <!-- This is column 2 -->
-        <div class="col-12 col-md-4" id="card_separation2">
-            <div class="card2">
-                <img src="images/endowment.jpeg" class="card-img-top" alt="endowment">
-                <div class="card-body">
-                    <h5 class="card-title">BAA Endowment Fund</h5>
-                    <p class="card-text"><u>“Are you a student? Get free money for your buggy idea!”</u></p>
-                </div>
-            </div>
-        </div> 
-        <div class="col-12 col-md-4" id="card_separation2">
-            <div class="card2">
-                <img src="images/makeabuggy.png" class="card-img-top" alt="make_a_buggy">
-                <div class="card-body">
-                    <h5 class="card-title">How to Build a Buggy</h5>
-                    <p class="card-text"><u>“Build your own buggy from 0! Learn the design, mechanics, structures......!”</u></p>
-                </div>
-            </div>
-        </div>  
-    </div>
-    </div>
+				<div class="carousel-item" id="card_mobile" data-interval="2000">
+					<img
+						src="images/endowment.jpeg"
+						class="d-block w-100 h-80"
+						alt="endowment"
+					/>
+					<p class="mobilecarouseltext">BAA Endowment Fund</p>
+				</div>
 
- 
-    <!-- Recent News, only on mobile view -->
-    <div id="carouselExampleInterval" class="carousel slide onlyMobile" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" id="card_mobile" data-interval="6000">
-          <img src="images/buggy_map.png" class="d-block w-100 h-80"  alt="buggy_map">
-          <p class="mobilecarouseltext">Buggy Race Rules</p>
-        </div>
+				<div class="carousel-item" id="card_mobile" data-interval="2000">
+					<img
+						src="images/makeabuggy.png"
+						class="d-block w-100 h-80"
+						alt="make_a_buggy"
+					/>
+					<p class="mobilecarouseltext">How to Build a Buggy</p>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleInterval"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="false"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleInterval"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="false"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 
-        <div class="carousel-item" id="card_mobile" data-interval="2000">
-          <img src="images/endowment.jpeg" class="d-block w-100 h-80" alt="endowment">
-          <p class="mobilecarouseltext">BAA Endowment Fund</p>
-        </div>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-12 text-center text-md-left mb-3 mb-md-0">
+						<!-- Social icons for all sizes -->
+						<a href="your-facebook-link" class="social-icon"
+							><img
+								src="images/facebook.jpg"
+								height="30px"
+								width="30px"
+								alt="Facebook"
+						/></a>
+						<a href="your-youtube-link" class="social-icon"
+							><img
+								src="images/youtube.jpg"
+								height="30px"
+								width="30px"
+								alt="YouTube"
+						/></a>
+						<a href="your-rss-link" class="social-icon"
+							><img src="images/rss.jpg" height="30px" width="30px" alt="RSS"
+						/></a>
+						<a href="your-twitter-link" class="social-icon"
+							><img
+								src="images/twitter.jpg"
+								height="30px"
+								width="30px"
+								alt="Twitter"
+						/></a>
+						<a href="your-instagram-link" class="social-icon"
+							><img
+								src="images/insta.jpg"
+								height="30px"
+								width="30px"
+								alt="Instagram"
+						/></a>
+						<a href="your-spotify-link" class="social-icon"
+							><img
+								src="images/spotify.jpg"
+								height="30px"
+								width="30px"
+								alt="Spotify"
+						/></a>
+						<!-- Contact email shown on all sizes -->
+						<p class="contact-email">
+							Please contact
+							<a href="mailto:admin@cmubuggy.org">admin@cmubuggy.org</a> with
+							any questions or follow us on social media!
+						</p>
+					</div>
+					<div class="col-md-8 col-12">
+						<div class="row">
+							<div
+								class="col-md-4 col-6 text-center text-md-left mb-3 mb-md-0 mobileNotDisplay"
+							>
+								<a href="#" class="footer-link">Rolls Reports</a>
+								<a href="#" class="footer-link">Donation</a>
+								<a href="#" class="footer-link">Sweepstake Rules</a>
+								<a href="#" class="footer-link">How to Build a Buggy</a>
+							</div>
+							<div
+								class="col-md-4 col-6 text-center text-md-left mb-3 mb-md-0 mobileNotDisplay"
+							>
+								<a href="#" class="footer-link">BAA Membership</a>
+								<a href="#" class="footer-link">Sweepstake Committee</a>
+								<a href="#" class="footer-link"
+									>BAA Endowment Grant Application and Projects</a
+								>
+							</div>
+							<div
+								class="col-md-4 col-12 text-center text-md-left mb-3 mb-md-0"
+							>
+								<a href="#" class="footer-link">FAQ</a>
+								<a href="#" class="footer-link">Accessibility</a>
+								<a href="#" class="footer-link">Privacy Policy</a>
+								<a href="#" class="footer-link">Code of Conduct</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 text-center">
+						<p class="copyright">CMU Buggy Alumni Association © 2008–2023</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-        <div class="carousel-item" id="card_mobile" data-interval="2000">
-          <img src="images/makeabuggy.png" class="d-block w-100 h-80" alt="make_a_buggy">
-          <p class="mobilecarouseltext">How to Build a Buggy</p>
-         </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"  aria-hidden="false"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="false"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    
-    <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-12 text-center text-md-left mb-3 mb-md-0">
-          <!-- Social icons for all sizes -->
-          <a href="your-facebook-link" class="social-icon"><img src="images/facebook.jpg" height = 30px width = 30px alt="Facebook"></a>
-          <a href="your-youtube-link" class="social-icon"><img src="images/youtube.jpg" height = 30px width = 30px alt="YouTube"></a>
-          <a href="your-rss-link" class="social-icon"><img src="images/rss.jpg"height = 30px width = 30px alt="RSS"></a>
-          <a href="your-twitter-link" class="social-icon"><img src="images/twitter.jpg" height = 30px width = 30px alt="Twitter"></a>
-          <a href="your-instagram-link" class="social-icon"><img src="images/insta.jpg" height = 30px width = 30px alt="Instagram"></a>
-          <a href="your-spotify-link" class="social-icon"><img src="images/spotify.jpg" height = 30px width = 30px alt="Spotify"></a>
-          <!-- Contact email shown on all sizes -->
-          <p class="contact-email">Please contact <a href="mailto:admin@cmubuggy.org">admin@cmubuggy.org</a> with any questions or follow us on social media!</p>
-        </div>
-        <div class="col-md-8 col-12">
-          <div class="row">
-            <div class="col-md-4 col-6 text-center text-md-left mb-3 mb-md-0 mobileNotDisplay">
-              <a href="#" class="footer-link">Rolls Reports</a>
-              <a href="#" class="footer-link">Donation</a>
-              <a href="#" class="footer-link">Sweepstake Rules</a>
-              <a href="#" class="footer-link">How to Build a Buggy</a>
-            </div>
-            <div class="col-md-4 col-6 text-center text-md-left mb-3 mb-md-0 mobileNotDisplay">
-              <a href="#" class="footer-link">BAA Membership</a>
-              <a href="#" class="footer-link">Sweepstake Committee</a>
-              <a href="#" class="footer-link">BAA Endowment Grant Application and Projects</a>
-            </div>
-            <div class="col-md-4 col-12 text-center text-md-left mb-3 mb-md-0">
-              <a href="#" class="footer-link">FAQ</a>
-              <a href="#" class="footer-link">Accessibility</a>
-              <a href="#" class="footer-link">Privacy Policy</a>
-              <a href="#" class="footer-link">Code of Conduct</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          <p class="copyright">CMU Buggy Alumni Association © 2008–2023</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- 
-</body>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.2/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
