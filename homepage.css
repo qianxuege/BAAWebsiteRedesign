@@ -47,10 +47,10 @@ body {
 }
 
 .navbar {
-	
 	padding: 0;
 	margin-top: 0;
 }
+
 .navbar-brand {
 	font-size: 1.5em;
 }
@@ -199,7 +199,7 @@ body {
 }
 
 .carouselBottomBtns .btn {
-	background-color: #b6cbe5;
+	background-color: #9db0c7; /* #b6cbe5 */
 	color: white;
 }
 
@@ -506,17 +506,23 @@ th {
 		align-items: center;
 	}
 
-	.mobile-only img {
-		height: 30px; /* Small logo height */
-		margin-right: 10px; /* Space between the logo and the "BAA" text */
-	}
-
 	.mobile-only span {
 		/* Styling for the "BAA" text */
 		display: block;
 		color: white;
 		font-size: 1.5em; /* Adjust size as needed */
 	}
+
+	.mobile-only #BuggyAlumniAssociationText {
+		display: none;
+		background-color: blue;
+	}
+
+	.mobile-only img {
+		height: 30px; /* Small logo height */
+		margin-right: 10px; /* Space between the logo and the "BAA" text */
+	}
+
 
 	/* Hide the race info text on mobile */
 	.race-info span {
@@ -560,10 +566,6 @@ th {
 }
 
 @media screen and (min-width: 576px) {
-	/* .onlyMobile {
-		display: none;
-	} */
-
 	/* Show the "BAA" text and logo on mobile */
 	.mobile-only {
 		display: none; /* Aligns items inline and centers them vertically */

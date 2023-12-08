@@ -1,0 +1,897 @@
+/* The default css style is for laptop, 
+we then styled it with media query to account for other devices*/
+
+/* 1. general styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	color: gray;
+}
+
+.contentContainer {
+	/* container style 80% width */
+	width: 80%;
+	margin: 0 auto;
+}
+
+.dividerContainer {
+	/* style for the red divs */
+	width: 98%;
+	position: relative;
+	left: -2vmin;
+	height: 0.8vmin;
+	margin: 5vmin auto;
+	background-color: #8b0000;
+}
+
+.inline-block {
+	/*not sure if need this*/
+	display: inline-flex;
+}
+
+.mobile-only {
+	display: none;
+}
+
+/* 2. general nav bar css */
+
+.header-top {
+	/* the red background that contains raceday countdown */
+	background-color: #8b0000;
+	color: white;
+	padding: 10px 0;
+	margin-top: 0;
+}
+
+.header-top a {
+	/* header-top contains raceday countdown and nav */
+	/* removes the underline for all links within the container */
+	text-decoration: none;
+}
+
+.header-top span {
+	/*not sure if need this*/
+	display: block;
+}
+
+.navbar {
+	/* navbar is the class of the element nav */
+	padding: 0.5rem 1rem; /* Reduces padding inside the navbar */
+}
+
+.navbar-brand {
+	/* this is the BAA icon for desktop */
+	height: 150px; /* Adjust the height of the logo container */
+	display: flex;
+	align-items: center; /* Centers the logo vertically */
+}
+
+.navbar-brand img {
+	/* this is the BAA icon image on desktop view */
+	height: 100%; /* Makes the logo fill the height of its container */
+	width: auto; /* Keeps the logo aspect ratio */
+}
+
+.navbar-nav .nav-link {
+	color: black;
+}
+
+
+
+.race-info {
+	text-align: right;
+}
+
+.navbar-collapse {
+	/* the container that contains all of the top nav labels */
+	border-bottom: 2px solid #8b0000; /* 2px solid border with your chosen color */
+	margin-top: 0;
+	padding: 0;
+	/* display: flex; 
+	justify-content: start; */
+}
+
+
+
+.navbar-dark .navbar-toggler {
+	/* not sure if need this */
+	border-color: rgb(129, 127, 127);
+}
+
+/* 3. specific nav bar style */
+
+.nav-fill {
+	/* makes the background of the current top nav label gray */
+	background-color: lightgray;
+    color: black;
+	border-radius: 5px;
+}
+
+.nav-item a {
+    color: black;
+}
+
+/* 4. footer */
+/* footer css */
+.footer {
+	background-color: #f2f2f2; /* or any color you prefer */
+	padding: 20px 0;
+}
+
+.social-icon {
+	/* Add styles for your social icons here */
+	margin-right: 5px; /* space between icons */
+}
+
+.footer-link {
+	display: block; /* each link on its own line */
+	margin-bottom: 5px; /* space between links */
+}
+
+.contact-email,
+.copyright {
+	margin-bottom: 10px;
+}
+.social-icon {
+	display: inline-block;
+	margin-right: 5px; /* Adjust the space between icons */
+	height: 30px; /* Adjust based on your design */
+	width: 30px; /* Adjust based on your design */
+}
+
+.social-icon img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain; /* This will make sure the image fits nicely within the dimensions */
+}
+
+/* 5. breadcrumb */
+.breadcrumb-container {
+	/* breadcrumb */
+	padding-left: 0px;
+	padding-top: 0px;
+	margin: 0;
+	float: right;
+	position: relative;
+}
+
+.breadcrumb-container .navgoingto {
+	/* the text next to the underlined Home in breadcrumb */
+	color: black;
+	font-size: 12px;
+}
+
+.breadcrumb-container .homelink {
+	color: black;
+}
+
+/* 6. Homepage */
+/* 6a. top carousel */
+#racedayCarousel {
+	overflow: hidden;
+	height: 50vmin; /*80vmin*/
+}
+
+#racedayCarousel .carouselText {
+	z-index: 3;
+	position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	top: 20%;
+}
+
+#racedayCarousel .carouselText h1 {
+	font-family: "Gabarito", sans-serif;
+}
+
+#racedayCarousel .carouselHeading {
+	text-align: center;
+	width: 100%;
+	color: white;
+	margin: 0 auto;
+}
+
+#racedayCarousel .carouselBottomBtns {
+	position: absolute;
+	width: 100%;
+	top: 25vmin;
+	margin: 0 auto;
+}
+
+#racedayCarousel .carouselBottomBtns .carouselBtn {
+	width: 100%;
+	text-align: center;
+}
+
+#racedayCarousel .carouselBottomBtns .btn {
+	background-color: #b8c8db; /* #b6cbe5 */
+	color: white;
+
+}
+
+/* 6b. Leaderboard and Schedule */
+.leaderboardNSchedule {
+	/* leaderboard and schedule are grouped with one high level container to make 
+    the transition across devices smoother with the boostrap row/col system */
+	margin-top: 6vmin;
+	margin-bottom: 3vmin;
+}
+
+.leaderboardNSchedule a {
+	font-family: "Raleway", sans-serif;
+}
+
+.leaderboardNSchedule .dividerContainer {
+    /* this is the horizontal line that separates leaderboard and schedule in mobile view */
+    display: none;
+}
+
+/* 6c. Leaderboard */
+.leaderboardContainer .nav-tabs {
+	border-bottom: 1px solid #8b0000;
+	color: black;
+}
+
+.leaderboardContainer .nav-link {
+	color: black;
+}
+
+.leaderboardContainer .nav-item .active {
+	border: 1px solid #8b0000;
+}
+
+.leaderboardContainer .tableContainer {
+	overflow: scroll;
+}
+
+.leaderboardContainer table {
+	width: 100%;
+	border-collapse: collapse;
+	position: relative;
+}
+
+.leaderboardContainer tr {
+	border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.leaderboardContainer th {
+	background-color: #878787;
+	color: white;
+}
+
+.leaderboardContainer td,
+.leaderboardContainer th {
+	padding: 0.4rem;
+}
+
+.leaderboardHeading {
+	position: relative;
+}
+
+.leaderboardHeading .additionalLink {
+	position: relative;
+	top: 1.8vmin;
+}
+
+.leaderboardTabs {
+	margin-top: 1vmin;
+}
+
+/* 6d. schedule at a glance */
+.schedule {
+	/* this is the overall container for the schedule section */
+    position: relative;
+}
+
+.schedule .horizontalCards {
+	margin-top: 1vmin;
+}
+
+.schedule .horizontalCards .cardImg img {
+	width: 100%;
+	height: 18vmin;
+	object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.schedule .horizontalCards .customCardBody p {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.schedule .horizontalCards .scheduleTitle {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	color: #ab0606;
+}
+
+.schedule .horizontalCards .scheduleLocation {
+	font-family: "Inter", sans-serif;
+	font-size: 0.6rem;
+}
+
+.schedule .horizontalCards .scheduleDescription {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+}
+
+/* 6e. raceday resources */
+.racedayResources {
+    /* this is the overall container for raceday resources */
+	margin-top: 2vmin;
+	margin-bottom: 3vmin;
+}
+
+.racedayResources .cardCenterHeading {
+	text-align: center;
+}
+
+.racedayResources .indCardDiv {
+	margin-bottom: 2vmin;
+}
+
+.racedayResourcesCardsContainer {
+	width: 100%;
+}
+
+.racedayResources .card {
+	width: 100%; /* the width would be the same as the col width*/
+}
+
+.racedayResources .card-body {
+	height: 16vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.racedayResources .iconImgContainer {
+	height: 16vmin;
+	background-color: #f2f5ef;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.racedayResources .iconImg {
+	width: 10vmin;
+}
+
+.racedayResources .activitiesImgContainer {
+	height: 16vmin;
+}
+
+.racedayResources .activitiesImg {
+	width: 100%; 
+	height: 16vmin; 
+	object-fit: cover;
+}
+
+/* 6f. Membership */
+
+.membership {
+    /* this is the overall container for membership */
+	margin-top: 2vmin;
+	width: 100%;
+}
+
+.membership .membershipImgContainer {
+	background-image: url("./images/BAAimage.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	padding: 3vmin;
+	margin-bottom: 2vmin;
+}
+
+.membership .btnContainer {
+	background-color: #4b4a4a4a;
+}
+
+.membership .membershipText {
+	color: white;
+}
+
+.outsetBtn {
+    /* this is the button style for the membership section */
+	border: 4px outset rgb(211, 209, 209);
+	border-radius: 5vmin;
+	width: 100%;
+	background-color: white;
+	color: #ab0606;
+}
+
+.btnIconImg {
+	width: 100%;
+	padding: 1vmin;
+	object-fit: cover;
+}
+
+.outsetBtn .btnTextContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outsetBtn .btnText {
+	margin: 0 auto;
+}
+
+.membershipsContainer {
+	background-color: #8b0000;
+	color: white;
+	padding: 4vmin;
+	height: 100%;
+}
+
+.membershipsContainer .outsetBtn {
+	height: 8vmin;
+	margin-bottom: 3vmin;
+}
+
+/* 6g. homepage basics */
+.homepageBasics {
+	width: 100%;
+}
+
+.homepageBasics .card-img-overlay {
+	/*this is the text over the image*/
+	background-color: #4b4a4a4a;
+	height: 35vmin;
+}
+
+.homepageBasics .card-img-overlay .card-title {
+	position: relative;
+	top: 60%;
+}
+
+.homepageBasics .card-img-overlay p {
+	display: none;
+}
+
+.homepageBasics .overlayImg {
+	/* this is the image */
+	height: 35vmin;
+	width: 100%;
+	object-fit: cover;
+}
+
+.homepageBasics .card-img-overlay p {
+	line-height: 0.8rem;
+}
+
+
+
+/* History Page */
+.header {
+	/* the whole top section */
+	color: black;
+	text-align: left;
+	padding: 0;
+	margin-top: 0;
+	position: relative;
+	top: -8vmin;
+}
+.record-section {
+	background-color: #aeacac; /* Adjust the color to match the exact shade you want */
+	color: white;
+	padding: 5px 0;
+	text-align: center;
+	position: relative;
+	top: -6vmin;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.historyheader {
+	font-size: 35px;
+}
+
+.custom-container {
+	max-width: 80%; /* Set the maximum width of the container to 80% of the viewport width */
+	margin: auto; /* Center the container */
+	padding: 40px 0; /* Spacing at the top and bottom of the container */
+}
+
+.custom-section {
+	border-radius: 8px; /* Rounded corners */
+	padding: 20px; /* Increased spacing around the content */
+	display: flex; /* Flex layout to place items side by side */
+	align-items: center; /* Vertically center align items */
+	margin-bottom: 20px; /* Space below the section */
+	position: relative;
+	top: -10vmin;
+}
+
+.custom-section img {
+	border-radius: 50%; /* Make image round */
+	width: 300px; /* Increased width of the image */
+	height: 300px; /* Increased height of the image */
+	object-fit: cover; /* Ensure the image covers the area without distortion */
+	margin-right: 30px; /* Increased spacing between image and text */
+}
+
+.custom-section h2 {
+	font-size: 2rem; /* Increased size of the section title */
+	color: #333; /* Color of the title */
+	margin-bottom: 1rem; /* Increased space below the title */
+}
+
+.custom-section .text-content {
+	flex-grow: 1; /* Allows the text content to fill the remaining space */
+}
+
+.custom-section .list-group-item {
+	background: transparent; /* Transparent background */
+	border: none; /* No borders */
+	padding-left: 0; /* No padding on the left */
+	padding-right: 0; /* No padding on the right */
+}
+
+.custom-section .list-group-item {
+	border-bottom: 1px solid lightgray; /* Light gray border for list items */
+}
+
+.custom-section .list-group-item:hover {
+	background-color: #e9ecef; /* Light hover effect */
+}
+
+.listtitle {
+	border-bottom: 1px solid #a30707; /* Light gray border for list items */
+}
+
+.linkColor {
+	color: gray;
+}
+.linkColor:hover {
+	background-color: #e9ecef; /* Light gray background on hover */
+	color: black;
+	text-decoration: none; /* Ensure no underline on hover */
+}
+
+.list-group-item:hover {
+	background-color: #e9ecef; /* Light gray background on hover */
+	color: black;
+	text-decoration: none; /* Ensure no underline on hover */
+}
+/* End the history content (list) here */
+
+/* Mobile */
+
+/* media queries */
+@media (max-width: 576px) {
+	/* homepage */
+    #racedayCarousel .carouselBottomBtns .btn {
+        height: 10vmin;
+        overflow: hidden;
+    }
+    
+    .schedule {
+        margin-top: 5vmin;
+    }
+
+	.schedule .horizontalCards .scheduleDescription {
+		display: none;
+	}
+	
+	.header-top .container-fluid .row > div:first-child > span {
+		/* Specific targeting to hide the "CMU BUGGY ALUMNI ASSOCIATION" text on mobile */
+		display: none;
+	}
+
+	.mobile-only {
+		/* Show the "BAA" text and logo on mobile */
+		display: flex; /* Aligns items inline and centers them vertically */
+		align-items: center;
+	}
+
+	.mobile-only img {
+		height: 30px; /* Small logo height */
+		margin-right: 10px; /* Space between the logo and the "BAA" text */
+	}
+
+	.mobile-only span {
+		/* Styling for the "BAA" text */
+		display: block;
+		color: white;
+		font-size: 1.5em; /* Adjust size as needed */
+	}
+
+    .mobile-only #BuggyAlumniAssociationText {
+        display: none;
+    }
+
+	.race-info span {
+		/* Hide the race info text on mobile */
+		display: none;
+	}
+
+	.navgoingto {
+		display: none;
+	}
+	.desk-top-view {
+		display: none;
+	}
+	.navbarBox {
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-brand {
+		display: none;
+		height: 20px;
+	}
+
+	.navbar-brand img {
+		display: none;
+	}
+
+	.header-top a {
+		text-decoration: none;
+	}
+
+	.navbar-toggler {
+		position: relative;
+		top: -11vmin;
+        left: 85%;
+	}
+
+
+	.navbar-collapse {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 0;
+		position: relative; 
+		top: -8vmin;
+	}
+}
+
+
+@media screen and (min-width: 576px) {
+    /* nav bar */
+    .navbar {
+        margin-bottom: 5vmin;
+    }
+
+    .mobile-only #BuggyAlumniAssociationText {
+		/* Styling for the Buggy Alumni Association text */
+		display: block;
+		color: white;
+		font-size: 1em; /* Adjust size as needed */
+	}
+
+    .mobile-only #BAAText {
+        /* targets the BAA text */
+		display: none;
+	}
+
+	.mobile-only img {
+		height: 30px; /* Small logo height */
+		margin-right: 10px; /* Space between the logo and the "BAA" text */
+	}
+
+    .navbar-toggler {
+        position: absolute;
+        left: 85%;
+        top: -7vmin;
+    }    
+    
+    /* homepage */
+	
+	.carouselBottomBtns {
+		top: 24vmin;
+	}
+
+	.racedayResources .card-body {
+		height: 10vmin;
+	}
+
+	.leaderboardContainer {
+		position: relative;
+		left: 0;
+	}
+
+	.horizontalCards .cardImg img {
+		height: 18vmin;
+	}
+
+	.schedule {
+		margin-top: 2vmin;
+	}
+
+	.horizontalCards .scheduleDescription {
+		display: block;
+	}
+
+	.racedayResources .card-body {
+		height: 10vmin;
+	}
+
+	.iconImgContainer {
+		height: 10vmin;
+	}
+
+	.iconImg {
+		width: 8vmin;
+	}
+}
+
+@media (max-width: 768px) {
+    
+    .navbar-collapse {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 0;
+		position: relative; 
+		/* top: -20vmin; */
+	}
+    
+    .footer .col-md-4:not(:last-child) {
+		margin-bottom: 20px; /* Add space between columns when they stack on mobile */
+	}
+	.mobileNotDisplay {
+		display: none;
+	}
+    /* .navbar-toggler {
+		top: -10vmin;
+        left: 85%;
+	} */
+    .desk-top-view {
+		display: none;
+	}
+
+    .race-info span {
+		/* Hide the race info text on mobile */
+		display: none;
+	}
+
+    .header-top .container-fluid .row > div:first-child > span {
+		/* Specific targeting to hide the "CMU BUGGY ALUMNI ASSOCIATION" text on mobile */
+		display: none;
+	}
+
+    .mobile-only {
+		/* Show the "BAA" text and logo on mobile */
+		display: flex; /* Aligns items inline and centers them vertically */
+		align-items: center;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        margin-bottom: 0;
+    }
+
+    .desk-top-view {
+		display: block;
+	}
+	.mobileNotDisplay {
+		display: block;
+	}
+
+	.carouselBottomBtns {
+		top: 28vmin; /*40vmin*/
+	}
+
+	.racedayResources .card-body {
+		height: 7vmin;
+	}
+
+	.activitiesImgContainer,
+	.activitiesImg {
+		height: 17vmin;
+	}
+
+	.outsetBtn,
+	.membershipsContainer .outsetBtn,
+	.btnIconImgContainer {
+		height: 7vmin;
+	}
+
+	.outsetBtn .btnIconImg {
+		width: 55%;
+		position: relative;
+		top: -0.7vmin;
+	}
+
+	#rollsReportCard .activitiesImgContainer,
+	#rollsReportCard .activitiesImg {
+		height: 30vmin;
+	}
+}
+
+@media (max-width: 992px) {
+    /* .mobile-only {
+        display: block;
+    } */
+
+	/* .navbar-collapse {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 0;
+	} */
+
+	/* .desk-top-view {
+		display: none;
+	} */
+}
+
+@media screen and (min-width: 992px) {
+    /* homepage */
+    .race-info span {
+		/* Hide the race info text on mobile */
+		display: block;
+	}
+
+    .header-top .container-fluid .row > div:first-child > span {
+		/* Specific targeting to hide the "CMU BUGGY ALUMNI ASSOCIATION" text on mobile */
+		display: block;
+	}
+
+    .mobile-only {
+        /* hides the "BAA" text and logo on mobile */
+		display: none; 
+    }
+
+	.desk-top-view {
+		display: block;
+	}
+
+	.carouselBottomBtns {
+		top: 32vmin; /*40vmin*/
+	}
+
+	.disappearOnLg {
+		display: none;
+	}
+
+	.horizontalCards .cardImg img {
+		/* width: 20vmin; */
+		height: 22vmin;
+	}
+
+	.leaderboardNSchedule .dividerContainer {
+		display: none;
+	}
+
+	.schedule {
+		margin-top: 0;
+	}
+
+	.outsetBtn .btnIconImg {
+		width: 80%;
+	}
+
+	#racedayCarousel {
+		height: 75vmin;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+    /* homepage */
+	.carouselBottomBtns {
+		top: 43vmin;
+	}
+
+	.outsetBtn,
+	.membershipsContainer .outsetBtn,
+	.btnIconImgContainer {
+		height: 8vmin;
+	}
+
+	.outsetBtn .btnIconImg {
+		width: 60%;
+	}
+
+	#racedayCarousel {
+		height: 85vmin;
+	}
+}
+

@@ -21,7 +21,7 @@
 			crossorigin="anonymous"
 		/>
 		<!-- custom css -->
-		<link rel="stylesheet" type="text/css" href="./homepage.css" />
+		<link rel="stylesheet" type="text/css" href="./styles.css" />
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body onload="changeTableVisibility(1)">
+	<body onload="changeTableVisibility(0)">
 		<div class="header-top">
 			<div class="container-fluid">
 				<div class="row">
@@ -43,7 +43,10 @@
 									alt="Small Logo"
 									style="height: 30px"
 								/>
-								<span>BAA</span>
+								<span id="BAAText">BAA</span>
+								<span id="BuggyAlumniAssociationText"
+									>CMU BUGGY ALUMNI ASSOCIATION</span
+								>
 							</div>
 						</a>
 						<!-- No separate span for 'BAA', we will use CSS to inject this content -->
@@ -55,10 +58,10 @@
 			</div>
 		</div>
 
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-md navbar-light">
 			<div class="container-fluid">
 				<!-- Changed to container-fluid -->
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand desk-top-view" href="index.html">
 					<img
 						class="desk-top-view"
 						src="images/shield-in-circle.svg"
@@ -78,37 +81,32 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div id="navbarNavDropdown">
-					<div class="collapse navbar-collapse">
-						<ul class="navbar-nav ml-auto" id="putToRight">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">News</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="history.html"
-									id="navbarDropdownMenuLink"
-								>
-									History
-								</a>
-								<!-- removed the drop down menu for easier access to history page -->
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">About BAA</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Gallery</a>
-							</li>
-						</ul>
-					</div>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
+						</li>
+						<li class="nav-item dropdown active">
+							<a
+								class="nav-link dropdown-toggle"
+								href="history.html"
+								id="navbarDropdownMenuLink"
+							>
+								History
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About BAA</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<!-- added this div as the bottom border of nav labels -->
-			<div class="separation"></div>
 		</nav>
 
 		<!-- carousel -->
@@ -207,7 +205,7 @@
 					class="leaderboardContainer container-fluid col-12 col-sm-12 col-lg-8 gx-5"
 				>
 					<div class="row leaderboardHeading">
-						<h2 class="col-6 col-lg-6">Leaderboard</h2>
+						<h2 class="col-7 col-sm-6 col-lg-6">Leaderboard</h2>
 						<a class="col additionalLink">see full version</a>
 					</div>
 					<div class="leaderboardTabs">
